@@ -31,14 +31,6 @@ export default function ServiceAreasSection() {
                 </span>
                 <span className="text-xs text-dark-400">Electrician</span>
               </Link>
-              <Link
-                to={`/electrical-services-${loc.slug}`}
-                className="block bg-dark-100/50 rounded-xl border border-dark-100 px-4 py-2 text-center hover:border-primary-300 hover:bg-white transition-all group"
-              >
-                <span className="text-xs font-medium text-dark-500 group-hover:text-primary-600 transition-colors">
-                  Electrical Services
-                </span>
-              </Link>
             </div>
           ))}
         </div>

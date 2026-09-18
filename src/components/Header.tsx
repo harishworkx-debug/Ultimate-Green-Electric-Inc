@@ -124,13 +124,13 @@ export default function Header() {
               )}
             </div>
 
-            <Link to="/#about" className="text-dark-200 hover:text-primary-400 text-sm font-medium transition-colors">
+            <Link to="/about" className="text-dark-200 hover:text-primary-400 text-sm font-medium transition-colors">
               About
             </Link>
             <Link to="/#reviews" className="text-dark-200 hover:text-primary-400 text-sm font-medium transition-colors">
               Reviews
             </Link>
-            <Link to="/#contact" className="text-dark-200 hover:text-primary-400 text-sm font-medium transition-colors">
+            <Link to="/contact" className="text-dark-200 hover:text-primary-400 text-sm font-medium transition-colors">
               Contact
             </Link>
           </nav>
@@ -214,13 +214,13 @@ export default function Header() {
               </div>
             )}
 
-            <Link to="/#about" className="text-dark-200 hover:text-primary-400 text-base font-medium py-2.5 transition-colors">
+            <Link to="/about" className="text-dark-200 hover:text-primary-400 text-base font-medium py-2.5 transition-colors">
               About
             </Link>
             <Link to="/#reviews" className="text-dark-200 hover:text-primary-400 text-base font-medium py-2.5 transition-colors">
               Reviews
             </Link>
-            <Link to="/#contact" className="text-dark-200 hover:text-primary-400 text-base font-medium py-2.5 transition-colors">
+            <Link to="/contact" className="text-dark-200 hover:text-primary-400 text-base font-medium py-2.5 transition-colors">
               Contact
             </Link>
           </nav>

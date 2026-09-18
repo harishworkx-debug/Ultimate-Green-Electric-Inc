@@ -7,7 +7,9 @@ import HomePage from '@/pages/HomePage';
 import ServicePage from '@/pages/ServicePage';
 import LocationPage from '@/pages/LocationPage';
 import NotFoundPage from '@/pages/NotFoundPage';
-import { SERVICES, SERVICE_LOCATIONS } from '@/data/business';
+import AboutPage from '@/pages/AboutPage';
+import ContactPage from '@/pages/ContactPage';
+import { SERVICES, SERVICE_LOCATIONS, MAIN_LOCATION } from '@/data/business';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -33,37 +35,29 @@ function HashScrollHandler() {
   return null;
 }
 
-function parseRoute(pathname: string): { type: 'home' | 'service' | 'location' | '404'; service?: string; location?: string; locationSlug?: string; pageType?: 'electrician' | 'electrical-services' } {
+function parseRoute(pathname: string): { type: 'home' | 'about' | 'contact' | 'service' | 'location' | '404'; service?: string; location?: string; locationSlug?: string } {
   const path = pathname.replace(/^\//, '').replace(/\/$/, '');
 
   if (!path) return { type: 'home' };
+  if (path === 'about') return { type: 'about' };
+  if (path === 'contact') return { type: 'contact' };
 
   // Check for /electrician-{location}
   if (path.startsWith('electrician-')) {
     const locationSlug = path.replace('electrician-', '');
     const loc = SERVICE_LOCATIONS.find((l) => l.slug === locationSlug);
-    if (loc) return { type: 'location', locationSlug, pageType: 'electrician' };
+    if (loc) return { type: 'location', locationSlug };
     return { type: '404' };
   }
 
-  // Check for /electrical-services-{location}
-  if (path.startsWith('electrical-services-')) {
-    const locationSlug = path.replace('electrical-services-', '');
-    const loc = SERVICE_LOCATIONS.find((l) => l.slug === locationSlug);
-    if (loc) return { type: 'location', locationSlug, pageType: 'electrical-services' };
-    return { type: '404' };
-  }
 
-  // Check for service pages: /{service-slug}-{location-slug}
-  // Sort services by slug length descending so longer matches first
-  const sortedServices = [...SERVICES].sort((a, b) => b.slug.length - a.slug.length);
-  for (const service of sortedServices) {
-    const prefix = service.slug + '-';
-    if (path.startsWith(prefix)) {
-      const locationSlug = path.replace(prefix, '');
-      const loc = SERVICE_LOCATIONS.find((l) => l.slug === locationSlug);
-      if (loc) return { type: 'service', service: service.slug, location: locationSlug };
-    }
+
+  // Check for service pages: /{service-slug}-{MAIN_LOCATION}
+  const suffix = `-${MAIN_LOCATION}`;
+  if (path.endsWith(suffix)) {
+    const serviceSlug = path.slice(0, -suffix.length);
+    const service = SERVICES.find((s) => s.slug === serviceSlug);
+    if (service) return { type: 'service', service: service.slug };
   }
 
   return { type: '404' };
@@ -74,12 +68,14 @@ function DynamicRouter() {
   const route = parseRoute(pathname);
 
   if (route.type === 'home') return <HomePage />;
+  if (route.type === 'about') return <AboutPage />;
+  if (route.type === 'contact') return <ContactPage />;
   if (route.type === '404') return <NotFoundPage />;
-  if (route.type === 'service' && route.service && route.location) {
-    return <ServicePage key={`${route.service}-${route.location}`} service={route.service} location={route.location} />;
+  if (route.type === 'service' && route.service) {
+    return <ServicePage key={route.service} service={route.service} />;
   }
-  if (route.type === 'location' && route.locationSlug && route.pageType) {
-    return <LocationPage key={`${route.pageType}-${route.locationSlug}`} slug={route.locationSlug} pageType={route.pageType} />;
+  if (route.type === 'location' && route.locationSlug) {
+    return <LocationPage key={route.locationSlug} slug={route.locationSlug} />;
   }
   return <NotFoundPage />;
 }

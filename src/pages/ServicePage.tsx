@@ -10,23 +10,16 @@ import { Link } from 'react-router-dom';
 import { SERVICES, SERVICE_LOCATIONS, BUSINESS, MAIN_LOCATION, GENERAL_FAQS } from '@/data/business';
 import { localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema } from '@/data/schema';
 
-export default function ServicePage({ service: serviceSlug, location: locationSlug }: { service: string; location: string }) {
+export default function ServicePage({ service: serviceSlug }: { service: string }) {
   const service = SERVICES.find((s) => s.slug === serviceSlug);
-  const location = SERVICE_LOCATIONS.find((l) => l.slug === locationSlug);
 
-  if (!service || !location) {
+  if (!service) {
     return <Navigate to="/404" replace />;
   }
 
-  const isMainLocation = location.slug === MAIN_LOCATION;
-  const locationName = location.name;
-  const pageTitle = isMainLocation
-    ? service.metaTitle
-    : `${service.title} in ${locationName}, CA | Ultimate Green Electric`;
-  const pageDescription = isMainLocation
-    ? service.metaDescription
-    : `${service.summary} Serving ${locationName}, CA and surrounding areas. Licensed, bonded, insured. Call ${BUSINESS.phoneDisplay}.`;
-  const canonical = `/${service.slug}-${location.slug}`;
+  const pageTitle = service.metaTitle;
+  const pageDescription = service.metaDescription;
+  const canonical = `/${service.slug}`;
 
   const relatedServices = SERVICES.filter((s) => s.slug !== service.slug).slice(0, 4);
   const allFaqs = [...service.faqs, ...GENERAL_FAQS.slice(0, 2)];
@@ -39,11 +32,11 @@ export default function ServicePage({ service: serviceSlug, location: locationSl
         canonical={canonical}
         schema={[
           localBusinessSchema(),
-          serviceSchema(service.title, service.slug, locationName),
+          serviceSchema(service.title, service.slug, "South Orange County"),
           faqSchema(allFaqs),
           breadcrumbSchema([
             { name: 'Home', url: '/' },
-            { name: `${service.title} ${locationName}`, url: canonical },
+            { name: service.title, url: canonical },
           ]),
         ]}
       />
@@ -71,10 +64,10 @@ export default function ServicePage({ service: serviceSlug, location: locationSl
 
           <div className="max-w-2xl">
             <span className="inline-block bg-primary-500/20 border border-primary-400/30 text-primary-300 px-4 py-1.5 rounded-full text-sm font-medium mb-4">
-              {locationName}, {BUSINESS.state}
+              South Orange County, CA
             </span>
             <h1 className="text-3xl md:text-5xl font-display font-bold text-white text-balance leading-tight mb-4 text-shadow-lg">
-              {isMainLocation ? service.h1 : `${service.title} in ${locationName}, CA`}
+              {service.h1}
             </h1>
             <p className="text-lg text-dark-200 mb-8 leading-relaxed">
               {service.summary} Call {BUSINESS.phoneDisplay} for a free estimate.
@@ -120,7 +113,7 @@ export default function ServicePage({ service: serviceSlug, location: locationSl
           {/* Benefits list */}
           <div className="bg-primary-50 rounded-2xl p-6 md:p-8 my-8 border border-primary-100">
             <h3 className="font-display font-bold text-dark-900 text-lg mb-4">
-              Why Choose Ultimate Green Electric in {locationName}?
+              Why Choose Ultimate Green Electric?
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               {[
@@ -143,7 +136,7 @@ export default function ServicePage({ service: serviceSlug, location: locationSl
           <div className="bg-dark-900 rounded-2xl p-6 md:p-8 text-center my-8">
             <Zap className="w-10 h-10 text-primary-500 mx-auto mb-4" />
             <h3 className="font-display font-bold text-white text-xl mb-2">
-              Need {service.title.toLowerCase()} in {locationName}?
+              Need {service.title.toLowerCase()}?
             </h3>
             <p className="text-dark-300 mb-4">Call now for a free estimate and fast service.</p>
             <a
@@ -161,13 +154,13 @@ export default function ServicePage({ service: serviceSlug, location: locationSl
       <section className="py-16 bg-dark-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-dark-900 text-center mb-8">
-            Other Electrical Services in {locationName}
+            Other Electrical Services
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {relatedServices.map((s) => (
               <Link
                 key={s.slug}
-                to={`/${s.slug}-${location.slug}`}
+                to={`/${s.slug}-${MAIN_LOCATION}`}
                 className="group bg-white rounded-xl p-5 border border-dark-100 hover:border-primary-200 hover:shadow-md transition-all"
               >
                 <h3 className="font-semibold text-dark-800 group-hover:text-primary-600 transition-colors mb-2">
@@ -185,11 +178,11 @@ export default function ServicePage({ service: serviceSlug, location: locationSl
 
       <Testimonials />
       <CTASection
-        title={`Ready for Expert ${service.title.toLowerCase()} in ${locationName}?`}
+        title={`Ready for Expert ${service.title.toLowerCase()}?`}
         subtitle="Call us today for a free estimate. Licensed electricians ready to help."
       />
       <MapSection />
-      <FAQAccordion faqs={allFaqs} title={`${service.title} FAQs — ${locationName}, CA`} />
+      <FAQAccordion faqs={allFaqs} title={`${service.title} FAQs`} />
     </>
   );
 }

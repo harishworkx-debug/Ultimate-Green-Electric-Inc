@@ -10,7 +10,7 @@ import Testimonials from '@/components/Testimonials';
 import { SERVICES, SERVICE_LOCATIONS, BUSINESS, MAIN_LOCATION, GENERAL_FAQS } from '@/data/business';
 import { localBusinessSchema, faqSchema, breadcrumbSchema } from '@/data/schema';
 
-export default function LocationPage({ slug, pageType }: { slug: string; pageType: 'electrician' | 'electrical-services' }) {
+export default function LocationPage({ slug }: { slug: string }) {
   const location = SERVICE_LOCATIONS.find((l) => l.slug === slug);
 
   if (!location) {
@@ -18,28 +18,19 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
   }
 
   const isMain = location.slug === MAIN_LOCATION;
-  const isElectricianPage = pageType === 'electrician';
   const locationName = location.name;
 
   const pageTitle = isMain
     ? `Electrician ${locationName}, CA | Ultimate Green Electric — (949) 305-3545`
-    : isElectricianPage
-    ? `Electrician in ${locationName}, CA | Ultimate Green Electric`
-    : `Electrical Services in ${locationName}, CA | Ultimate Green Electric`;
+    : `Electrician in ${locationName}, CA | Ultimate Green Electric`;
 
-  const pageDescription = isElectricianPage
-    ? `Looking for a licensed electrician in ${locationName}, CA? Ultimate Green Electric provides residential, commercial, and emergency electrical services. Call ${BUSINESS.phoneDisplay}.`
-    : `Professional electrical services in ${locationName}, CA. Panel upgrades, EV chargers, lighting, repairs, inspections & more. Licensed & insured. Call ${BUSINESS.phoneDisplay}.`;
+  const pageDescription = `Looking for a licensed electrician in ${locationName}, CA? Ultimate Green Electric provides residential, commercial, and emergency electrical services. Call ${BUSINESS.phoneDisplay}.`;
 
-  const canonical = isElectricianPage ? `/electrician-${location.slug}` : `/electrical-services-${location.slug}`;
+  const canonical = `/electrician-${location.slug}`;
 
-  const h1 = isElectricianPage
-    ? `Electrician in ${locationName}, CA`
-    : `Electrical Services in ${locationName}, CA`;
+  const h1 = `Electrician in ${locationName}, CA`;
 
-  const intro = isElectricianPage
-    ? `When you need a dependable electrician in ${locationName}, California, Ultimate Green Electric, Inc. is the name to trust. We're a licensed, bonded, and insured electrical contractor based in nearby Mission Viejo, serving ${locationName} and all of South Orange County with fast, professional service at fair prices.`
-    : `Ultimate Green Electric, Inc. provides a complete range of electrical services in ${locationName}, CA. From panel upgrades and EV charger installations to lighting, repairs, and safety inspections, our licensed electricians deliver quality workmanship on every job.`;
+  const intro = `When you need a dependable electrician in ${locationName}, California, Ultimate Green Electric, Inc. is the name to trust. We're a licensed, bonded, and insured electrical contractor based in nearby Mission Viejo, serving ${locationName} and all of South Orange County with fast, professional service at fair prices.`;
 
   const locationFaqs = [
     {
@@ -73,7 +64,7 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
           faqSchema(allFaqs),
           breadcrumbSchema([
             { name: 'Home', url: '/' },
-            { name: isElectricianPage ? `Electrician ${locationName}` : `Electrical Services ${locationName}`, url: canonical },
+            { name: `Electrician ${locationName}`, url: canonical },
           ]),
         ]}
       />
@@ -94,7 +85,7 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
             <Breadcrumbs
               items={[
                 { name: 'Home', url: '/' },
-                { name: isElectricianPage ? `Electrician ${locationName}` : `Electrical Services ${locationName}`, url: canonical },
+                { name: `Electrician ${locationName}`, url: canonical },
               ]}
             />
           </div>
@@ -108,9 +99,7 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
               {h1}
             </h1>
             <p className="text-lg text-dark-200 mb-8 leading-relaxed">
-              {isElectricianPage
-                ? `Licensed, bonded, and insured electrician serving ${locationName} and all of South Orange County. Fast response, fair pricing, and quality work — call ${BUSINESS.phoneDisplay}.`
-                : `Complete electrical services for homes and businesses in ${locationName}. Panel upgrades, EV chargers, lighting, repairs & more. Call ${BUSINESS.phoneDisplay}.`}
+              {`Licensed, bonded, and insured electrician serving ${locationName} and all of South Orange County. Fast response, fair pricing, and quality work — call ${BUSINESS.phoneDisplay}.`}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -143,14 +132,10 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
 
           <div className="prose prose-lg max-w-none">
             <h2 className="text-2xl font-display font-bold text-dark-900 mb-4">
-              {isElectricianPage
-                ? `Why ${locationName} Homeowners Choose Us`
-                : `Complete Electrical Services in ${locationName}`}
+              {`Why ${locationName} Homeowners Choose Us`}
             </h2>
             <p className="text-dark-600 leading-relaxed mb-6">
-              {isElectricianPage
-                ? `Finding a reliable electrician in ${locationName} doesn't have to be a guessing game. Ultimate Green Electric, Inc. has built a reputation throughout South Orange County for honest service, skilled workmanship, and fair pricing. Whether you need a quick repair, a panel upgrade, or a full rewiring project, our licensed electricians arrive on time, diagnose the problem accurately, and complete the work to code.`
-                : `From routine electrical repairs to major installations, our team handles the full spectrum of electrical work for ${locationName} residents and businesses. We use high-quality materials, follow all local codes, and stand behind every job with a satisfaction guarantee. No matter the size of your project, you can count on us for professional results.`}
+              {`Finding a reliable electrician in ${locationName} doesn't have to be a guessing game. Ultimate Green Electric, Inc. has built a reputation throughout South Orange County for honest service, skilled workmanship, and fair pricing. Whether you need a quick repair, a panel upgrade, or a full rewiring project, our licensed electricians arrive on time, diagnose the problem accurately, and complete the work to code.`}
             </p>
 
             <h2 className="text-2xl font-display font-bold text-dark-900 mb-4">
@@ -168,7 +153,7 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
             </p>
 
             <h2 className="text-2xl font-display font-bold text-dark-900 mb-4">
-              {isElectricianPage ? `Electrical Services We Provide in ${locationName}` : `What We Offer in ${locationName}`}
+              {`Electrical Services We Provide in ${locationName}`}
             </h2>
             <p className="text-dark-600 leading-relaxed mb-4">
               {`Our licensed electricians provide a comprehensive range of electrical services to ${locationName} homes and businesses:`}
@@ -214,7 +199,7 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
       <section className="py-16 bg-dark-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-display font-bold text-dark-900 text-center mb-8">
-            {isElectricianPage ? `Our Services in ${locationName}` : `Electrical Services Available in ${locationName}`}
+            {`Our Services in ${locationName}`}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {SERVICES.map((s) => (
@@ -242,7 +227,7 @@ export default function LocationPage({ slug, pageType }: { slug: string; pageTyp
         subtitle={`Call us today for a free estimate. Licensed electricians serving ${locationName} and all of South Orange County.`}
       />
       <MapSection />
-      <FAQAccordion faqs={allFaqs} title={`${isElectricianPage ? 'Electrician' : 'Electrical Services'} FAQs — ${locationName}, CA`} />
+      <FAQAccordion faqs={allFaqs} title={`Electrician FAQs — ${locationName}, CA`} />
     </>
   );
 }
