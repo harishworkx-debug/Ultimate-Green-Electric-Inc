@@ -1,17 +1,21 @@
-import { Phone, MapPin, Shield, Clock, Star, Zap, ChevronRight } from 'lucide-react';
+import { Phone, MapPin, Shield, Clock, Star, Zap, ChevronRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '@/components/SEO';
 import ServicesGrid from '@/components/ServicesGrid';
 import ServiceAreasSection from '@/components/ServiceAreasSection';
 import AboutSection from '@/components/AboutSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
+import ProcessSection from '@/components/ProcessSection';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/CTASection';
 import MapSection from '@/components/MapSection';
 import FAQAccordion from '@/components/FAQAccordion';
-import { BUSINESS, HOME_FAQS } from '@/data/business';
+import { BUSINESS, HOME_FAQS, SERVICES, MAIN_LOCATION } from '@/data/business';
 import { localBusinessSchema, faqSchema } from '@/data/schema';
 
 export default function HomePage() {
+  const popularServices = SERVICES.slice(0, 4);
+
   return (
     <>
       <SEO
@@ -105,10 +109,125 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Popular services quick links */}
+      <section className="py-12 md:py-16 bg-dark-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-8">
+            <span className="inline-block text-primary-600 font-semibold text-sm uppercase tracking-wider mb-2">
+              Popular Services
+            </span>
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-dark-900 mb-3">
+              Fast Help for Common Electrical Needs
+            </h2>
+            <p className="text-dark-500 max-w-2xl mx-auto">
+              Whatever your electrical issue, our licensed Mission Viejo electricians have the tools and experience to solve it.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {popularServices.map((s) => (
+              <Link
+                key={s.slug}
+                to={`/${s.slug}-${MAIN_LOCATION}`}
+                className="group bg-white rounded-xl p-5 border border-dark-100 hover:border-primary-200 hover:shadow-md transition-all"
+              >
+                <div className="flex items-start gap-3 mb-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-200 transition-colors">
+                    <Zap className="w-5 h-5 text-primary-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-dark-800 group-hover:text-primary-600 transition-colors text-sm">
+                      {s.title}
+                    </h3>
+                  </div>
+                </div>
+                <p className="text-dark-400 text-xs mb-3 line-clamp-2">{s.summary}</p>
+                <span className="text-primary-600 text-sm font-medium">
+                  {s.title} →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ServicesGrid />
+      <WhyChooseUs />
+      <ProcessSection />
       <AboutSection />
+
+      {/* Emergency callout */}
+      <section className="py-12 bg-dark-950">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-gradient-to-r from-primary-800 to-primary-950 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+            <div className="absolute inset-0 bg-grid-pattern opacity-20" />
+            <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 bg-accent-500/20 text-accent-300 px-3 py-1 rounded-full text-xs font-semibold mb-4">
+                  <Zap className="w-3.5 h-3.5" />
+                  Emergency Service Available
+                </div>
+                <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
+                  Electrical Emergency? Do Not Wait.
+                </h2>
+                <p className="text-primary-100 leading-relaxed mb-6">
+                  Sparking outlets, burning smells, buzzing panels, or sudden power loss are fire hazards that need immediate professional attention. We respond fast to electrical emergencies in Mission Viejo and all of South Orange County — any time, day or night.
+                </p>
+                <div className="flex flex-wrap gap-3 mb-6">
+                  {['Sparking or arcing', 'Burning smell', 'Breaker will not reset', 'Power outage', 'Water near wiring'].map((item, i) => (
+                    <div key={i} className="flex items-center gap-1.5 text-primary-100 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-primary-400" />
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="text-center lg:text-right">
+                <a
+                  href={`tel:${BUSINESS.phoneRaw}`}
+                  className="inline-flex items-center gap-3 bg-white text-primary-700 px-8 py-5 rounded-xl font-bold text-xl hover:bg-primary-50 transition-all hover:shadow-2xl active:scale-95"
+                >
+                  <Phone className="w-7 h-7" />
+                  {BUSINESS.phoneDisplay}
+                </a>
+                <p className="text-primary-200 text-sm mt-4">
+                  Available 24/7 for electrical emergencies
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <ServiceAreasSection />
       <Testimonials />
+
+      {/* License & trust strip */}
+      <section className="py-10 bg-white border-y border-dark-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center">
+            <div className="flex items-center gap-2">
+              <Shield className="w-6 h-6 text-primary-600" />
+              <span className="text-dark-700 font-semibold text-sm">CA Licensed #{BUSINESS.license}</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-dark-200" />
+            <div className="flex items-center gap-2">
+              <CheckCircle2 className="w-6 h-6 text-primary-600" />
+              <span className="text-dark-700 font-semibold text-sm">Bonded & Insured</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-dark-200" />
+            <div className="flex items-center gap-2">
+              <Star className="w-6 h-6 text-accent-500" fill="currentColor" />
+              <span className="text-dark-700 font-semibold text-sm">5-Star Customer Rated</span>
+            </div>
+            <div className="hidden md:block w-px h-6 bg-dark-200" />
+            <div className="flex items-center gap-2">
+              <Clock className="w-6 h-6 text-primary-600" />
+              <span className="text-dark-700 font-semibold text-sm">Serving Since 2005</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <CTASection />
       <MapSection />
       <FAQAccordion faqs={HOME_FAQS} />
