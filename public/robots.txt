@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /404
 
-Sitemap: https://ultimategreenelectric.com/sitemap.xml
+Sitemap: https://www.ultimategreenelectric.com/sitemap.xml
