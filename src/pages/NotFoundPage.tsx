@@ -8,7 +8,7 @@ export default function NotFoundPage() {
     <>
       <SEO
         title="Page Not Found | Ultimate Green Electric"
-        description="The page you're looking for doesn't exist. Please visit our homepage or call us at (949) 284-7981."
+        description="The page you're looking for doesn't exist. Please visit our homepage or call us at (949) 312-6033."
         canonical="/404"
       />
       <section className="min-h-screen flex items-center justify-center bg-dark-50 pt-20">

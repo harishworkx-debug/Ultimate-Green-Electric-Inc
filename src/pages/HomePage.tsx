@@ -19,8 +19,8 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Ultimate Green Electric | Mission Viejo Electrician — (949) 284-7981"
-        description="Top-rated licensed electrician in Mission Viejo, CA. Residential, commercial, emergency, panel upgrades, EV chargers & more. Serving all of South Orange County. Call (949) 284-7981."
+        title="Ultimate Green Electric | Mission Viejo Electrician — (949) 312-6033"
+        description="Top-rated licensed electrician in Mission Viejo, CA. Residential, commercial, emergency, panel upgrades, EV chargers & more. Serving all of South Orange County. Call (949) 312-6033."
         canonical="/"
         schema={[localBusinessSchema(), faqSchema(HOME_FAQS)]}
       />

@@ -21,7 +21,7 @@ export default function LocationPage({ slug }: { slug: string }) {
   const locationName = location.name;
 
   const pageTitle = isMain
-    ? `Electrician ${locationName}, CA | Ultimate Green Electric — (949) 284-7981`
+    ? `Electrician ${locationName}, CA | Ultimate Green Electric — (949) 312-6033`
     : `Electrician in ${locationName}, CA | Ultimate Green Electric`;
 
   const pageDescription = `Looking for a licensed electrician in ${locationName}, CA? Ultimate Green Electric provides residential, commercial, and emergency electrical services. Call ${BUSINESS.phoneDisplay}.`;

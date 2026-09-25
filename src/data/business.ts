@@ -2,9 +2,9 @@ export const BUSINESS = {
   name: 'Ultimate Green Electric, Inc.',
   shortName: 'Ultimate Green Electric',
   domain: 'ultimategreenelectric.com',
-  phone: '+1 (949) 284-7981',
+  phone: '+1 (949) 312-6033',
   phoneRaw: '+19492847981',
-  phoneDisplay: '(949) 284-7981',
+  phoneDisplay: '(949) 312-6033',
   secondaryPhone: '(800) 663-1966',
   email: 'admin@msqelectric.com',
   license: '999000',
@@ -61,7 +61,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/8961701/pexels-photo-8961701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician installing wiring in a Mission Viejo home',
     metaTitle: 'Residential Electrician Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Trusted residential electrician in Mission Viejo, CA. Wiring, lighting, panel upgrades, outlets & more. Licensed, bonded, insured. Call (949) 284-7981.',
+    metaDescription: 'Trusted residential electrician in Mission Viejo, CA. Wiring, lighting, panel upgrades, outlets & more. Licensed, bonded, insured. Call (949) 312-6033.',
     h1: 'Residential Electrician in Mission Viejo, CA',
     summary: 'Dependable home electrical services for Mission Viejo families — from repairs and installations to full rewiring.',
     intro: 'When you need a residential electrician in Mission Viejo, Ultimate Green Electric, Inc. delivers fast, reliable service at fair prices. Our licensed electricians handle everything from minor outlet repairs to complete home rewiring, always with a focus on safety and clean workmanship.',
@@ -80,7 +80,7 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'Do you offer free estimates for residential electrical work?', answer: 'Yes, we provide free estimates on most residential projects. Call (949) 284-7981 to schedule a visit from one of our Mission Viejo electricians.' },
+      { question: 'Do you offer free estimates for residential electrical work?', answer: 'Yes, we provide free estimates on most residential projects. Call (949) 312-6033 to schedule a visit from one of our Mission Viejo electricians.' },
       { question: 'Are your electricians licensed and insured?', answer: 'Absolutely. All of our electricians are licensed (CA Lic #999000), bonded, and insured for your protection and peace of mind.' },
       { question: 'Can you work on older homes in Mission Viejo?', answer: 'Yes. We frequently service older Mission Viejo homes, including panel upgrades, rewiring, and bringing systems up to current electrical code.' },
     ],
@@ -93,7 +93,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/3615735/pexels-photo-3615735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Commercial electrician working on electrical wiring in a building',
     metaTitle: 'Commercial Electrician Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Reliable commercial electrician in Mission Viejo, CA. Tenant improvements, lighting, panel upgrades & emergency repair. Call (949) 284-7981.',
+    metaDescription: 'Reliable commercial electrician in Mission Viejo, CA. Tenant improvements, lighting, panel upgrades & emergency repair. Call (949) 312-6033.',
     h1: 'Commercial Electrician in Mission Viejo, CA',
     summary: 'Electrical contracting for Mission Viejo businesses — tenant build-outs, lighting retrofits, panel upgrades, and fast emergency repair.',
     intro: 'Downtime costs your business money. Ultimate Green Electric, Inc. provides commercial electrical services in Mission Viejo that keep your operations running. From office tenant improvements to retail lighting upgrades and industrial wiring, our commercial electricians deliver code-compliant work on schedule and on budget.',
@@ -112,7 +112,7 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'Can you work after business hours to avoid downtime?', answer: 'Yes. We offer flexible scheduling including evenings and weekend appointments for commercial clients in Mission Viejo. Call (949) 284-7981 to arrange a time that works for your business.' },
+      { question: 'Can you work after business hours to avoid downtime?', answer: 'Yes. We offer flexible scheduling including evenings and weekend appointments for commercial clients in Mission Viejo. Call (949) 312-6033 to arrange a time that works for your business.' },
       { question: 'Do you handle large commercial projects?', answer: 'We do. From single-office tenant improvements to multi-unit retail and industrial wiring projects, our team has the capacity and licensing to handle commercial work of any size.' },
       { question: 'Can you help with energy-efficiency upgrades?', answer: 'Yes. We specialize in LED lighting retrofits and energy-saving electrical upgrades that reduce operating costs for Mission Viejo businesses.' },
     ],
@@ -125,7 +125,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician repairing circuit breaker panel with colorful wires',
     metaTitle: 'Electrical Repair Mission Viejo CA | Fast & Reliable | Ultimate Green Electric',
-    metaDescription: 'Fast electrical repair in Mission Viejo, CA. Flickering lights, tripping breakers, dead outlets & more. Licensed electricians. Call (949) 284-7981.',
+    metaDescription: 'Fast electrical repair in Mission Viejo, CA. Flickering lights, tripping breakers, dead outlets & more. Licensed electricians. Call (949) 312-6033.',
     h1: 'Electrical Repair in Mission Viejo, CA',
     summary: 'From tripping breakers to dead outlets, our Mission Viejo electricians diagnose and fix electrical problems fast.',
     intro: 'Electrical problems rarely happen at a convenient time. Whether your breaker keeps tripping, an outlet has gone dead, or your lights are flickering, Ultimate Green Electric, Inc. provides prompt electrical repair service throughout Mission Viejo. Our electricians diagnose the root cause — not just the symptom — and fix it safely to code.',
@@ -140,11 +140,11 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: 'Same-Day Service Available',
-        body: 'Many electrical repairs in Mission Viejo can be completed the same day you call. We keep our service vehicles fully stocked with common parts so we can resolve most issues in a single visit. Call (949) 284-7981 and we\'ll dispatch an electrician to your door.',
+        body: 'Many electrical repairs in Mission Viejo can be completed the same day you call. We keep our service vehicles fully stocked with common parts so we can resolve most issues in a single visit. Call (949) 312-6033 and we\'ll dispatch an electrician to your door.',
       },
     ],
     faqs: [
-      { question: 'How quickly can you respond to a repair call?', answer: 'We offer same-day service for most electrical repairs in Mission Viejo. Call (949) 284-7981 and we\'ll send an electrician as quickly as possible.' },
+      { question: 'How quickly can you respond to a repair call?', answer: 'We offer same-day service for most electrical repairs in Mission Viejo. Call (949) 312-6033 and we\'ll send an electrician as quickly as possible.' },
       { question: 'Is flickering a light an emergency?', answer: 'Flickering can indicate a loose connection or overloaded circuit. If only one light flickers, it may be a simple fix. If multiple lights flicker throughout the house, call us right away — it could signal a serious wiring or panel problem.' },
       { question: 'Do you charge for travel time within Mission Viejo?', answer: 'We do not charge extra travel fees for service calls within our Mission Viejo service area. You\'ll know all costs before we begin any repair work.' },
     ],
@@ -157,9 +157,9 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/17924298/pexels-photo-17924298.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Emergency electrician working on an outdoor electrical panel',
     metaTitle: 'Emergency Electrician Mission Viejo CA | 24/7 Fast Response | Ultimate Green Electric',
-    metaDescription: '24/7 emergency electrician in Mission Viejo, CA. Power outages, sparking, burning smell — call (949) 284-7981 for fast emergency electrical service.',
+    metaDescription: '24/7 emergency electrician in Mission Viejo, CA. Power outages, sparking, burning smell — call (949) 312-6033 for fast emergency electrical service.',
     h1: 'Emergency Electrician in Mission Viejo, CA',
-    summary: 'Electrical emergency in Mission Viejo? We respond fast — sparking, burning smells, power outages, and more. Call (949) 284-7981.',
+    summary: 'Electrical emergency in Mission Viejo? We respond fast — sparking, burning smells, power outages, and more. Call (949) 312-6033.',
     intro: 'An electrical emergency can happen at any hour. Ultimate Green Electric, Inc. offers emergency electrician service in Mission Viejo for situations that can\'t wait — sparking outlets, burning smells, sudden power loss, and other urgent hazards. Our electricians are ready to respond quickly and make your property safe again.',
     sections: [
       {
@@ -172,13 +172,13 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: 'Safety First — What to Do While You Wait',
-        body: 'If you smell burning or see sparks, turn off power at the main breaker if you can do so safely. Do not touch any affected outlets or switches. Evacuate the area if the smell is strong. Then call (949) 284-7981 and we\'ll guide you through next steps while an electrician is on the way.',
+        body: 'If you smell burning or see sparks, turn off power at the main breaker if you can do so safely. Do not touch any affected outlets or switches. Evacuate the area if the smell is strong. Then call (949) 312-6033 and we\'ll guide you through next steps while an electrician is on the way.',
       },
     ],
     faqs: [
-      { question: 'Do you offer 24/7 emergency electrical service?', answer: 'Yes. Emergency electrical services are available in Mission Viejo and surrounding areas. Call (949) 284-7981 any time, day or night.' },
+      { question: 'Do you offer 24/7 emergency electrical service?', answer: 'Yes. Emergency electrical services are available in Mission Viejo and surrounding areas. Call (949) 312-6033 any time, day or night.' },
       { question: 'What counts as an electrical emergency?', answer: 'Sparking, burning smells, buzzing from your panel, repeated breaker tripping, water near wiring, and total power loss are all emergencies. When in doubt, call — it\'s better to be safe.' },
-      { question: 'How fast can an emergency electrician get to my Mission Viejo home?', answer: 'Because we are based in Mission Viejo, response times are typically very fast. We\'ll give you an estimated arrival time when you call (949) 284-7981.' },
+      { question: 'How fast can an emergency electrician get to my Mission Viejo home?', answer: 'Because we are based in Mission Viejo, response times are typically very fast. We\'ll give you an estimated arrival time when you call (949) 312-6033.' },
     ],
   },
   {
@@ -189,7 +189,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician installing a new electrical panel in Mission Viejo',
     metaTitle: 'Electrical Panel Upgrade Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Electrical panel upgrade in Mission Viejo, CA. Replace outdated 100A panels, add capacity for EV chargers & additions. Call (949) 284-7981.',
+    metaDescription: 'Electrical panel upgrade in Mission Viejo, CA. Replace outdated 100A panels, add capacity for EV chargers & additions. Call (949) 312-6033.',
     h1: 'Electrical Panel Upgrade in Mission Viejo, CA',
     summary: 'Upgrade your Mission Viejo home\'s electrical panel for safety, capacity, and code compliance. Free estimates available.',
     intro: 'If your home still has a 100-amp panel — or worse, an outdated fuse box — it may not handle the demands of modern life. Ultimate Green Electric, Inc. performs electrical panel upgrades in Mission Viejo to bring your home up to code, add capacity for new appliances or EV chargers, and eliminate the fire risk of aging panels.',
@@ -210,7 +210,7 @@ export const SERVICES: ServiceInfo[] = [
     faqs: [
       { question: 'How long does a panel upgrade take?', answer: 'Most residential panel upgrades in Mission Viejo are completed in one day. Larger 400-amp upgrades or service relocations may take longer. We\'ll give you a clear timeline during your free estimate.' },
       { question: 'Do I need a permit for a panel upgrade?', answer: 'Yes, panel upgrades require a city permit and inspection in Mission Viejo. We handle all permitting and inspection coordination for you.' },
-      { question: 'How much does a panel upgrade cost?', answer: 'Costs vary based on amperage and whether your meter base or service entrance also needs upgrading. Call (949) 284-7981 for a free estimate tailored to your home.' },
+      { question: 'How much does a panel upgrade cost?', answer: 'Costs vary based on amperage and whether your meter base or service entrance also needs upgrading. Call (949) 312-6033 for a free estimate tailored to your home.' },
     ],
   },
   {
@@ -221,7 +221,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/5391509/pexels-photo-5391509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Wall-mounted EV charger installed at a Mission Viejo home',
     metaTitle: 'EV Charger Installation Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Expert EV charger installation in Mission Viejo, CA. Tesla, ChargePoint, JuiceBox & more. Level 2 home charging stations. Call (949) 284-7981.',
+    metaDescription: 'Expert EV charger installation in Mission Viejo, CA. Tesla, ChargePoint, JuiceBox & more. Level 2 home charging stations. Call (949) 312-6033.',
     h1: 'EV Charger Installation in Mission Viejo, CA',
     summary: 'Level 2 home EV charger installation in Mission Viejo. Tesla, ChargePoint, JuiceBox — we install all major brands safely and to code.',
     intro: 'More Mission Viejo residents are driving electric, and a dedicated Level 2 home charger is the best way to keep your vehicle ready to go. Ultimate Green Electric, Inc. installs EV charging stations from all major brands — Tesla, ChargePoint, JuiceBox, Grizzl-E, and more — with the proper dedicated circuit, breaker, and safety components your vehicle requires.',
@@ -240,7 +240,7 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'How much does EV charger installation cost in Mission Viejo?', answer: 'Cost depends on your panel capacity, the distance from the panel to the charger location, and whether a panel upgrade is needed. Call (949) 284-7981 for a free estimate.' },
+      { question: 'How much does EV charger installation cost in Mission Viejo?', answer: 'Cost depends on your panel capacity, the distance from the panel to the charger location, and whether a panel upgrade is needed. Call (949) 312-6033 for a free estimate.' },
       { question: 'Can you install a Tesla Wall Connector?', answer: 'Yes. We install Tesla Wall Connectors and all other major Level 2 EV charger brands for Mission Viejo residents.' },
       { question: 'Do I need a panel upgrade for an EV charger?', answer: 'It depends on your panel\'s available capacity. We\'ll inspect your panel during the estimate and let you know if an upgrade is needed before any work begins.' },
     ],
@@ -253,7 +253,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/1253128/pexels-photo-1253128.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Modern lighting installation in a Mission Viejo home',
     metaTitle: 'Lighting Installation Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Professional lighting installation in Mission Viejo, CA. Recessed lighting, LED retrofit, outdoor & landscape lighting. Call (949) 284-7981.',
+    metaDescription: 'Professional lighting installation in Mission Viejo, CA. Recessed lighting, LED retrofit, outdoor & landscape lighting. Call (949) 312-6033.',
     h1: 'Lighting Installation in Mission Viejo, CA',
     summary: 'Recessed lighting, LED retrofits, outdoor and landscape lighting — installed by licensed Mission Viejo electricians.',
     intro: 'The right lighting transforms a space. Ultimate Green Electric, Inc. provides professional lighting installation in Mission Viejo for homes and businesses — from recessed can lighting and LED retrofits to outdoor security and landscape lighting. Our electricians handle the wiring, switches, dimmers, and fixtures so everything works beautifully and safely.',
@@ -285,7 +285,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician installing a new electrical outlet on a wall',
     metaTitle: 'Outlet & Switch Repair Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Outlet and switch repair in Mission Viejo, CA. Dead outlets, GFCI repair, dimmer installation & more. Licensed electricians. Call (949) 284-7981.',
+    metaDescription: 'Outlet and switch repair in Mission Viejo, CA. Dead outlets, GFCI repair, dimmer installation & more. Licensed electricians. Call (949) 312-6033.',
     h1: 'Outlet & Switch Repair in Mission Viejo, CA',
     summary: 'Dead outlets, faulty switches, GFCI troubleshooting, and new installations — handled by Mission Viejo\'s trusted electricians.',
     intro: 'Outlets and switches are the points where you interact with your electrical system every day. When one fails, it\'s more than an inconvenience — it can be a safety hazard. Ultimate Green Electric, Inc. repairs and replaces outlets, switches, and GFCIs throughout Mission Viejo, bringing your system up to code and restoring safe, reliable power.',
@@ -305,7 +305,7 @@ export const SERVICES: ServiceInfo[] = [
     ],
     faqs: [
       { question: 'Why is my GFCI outlet keeps tripping?', answer: 'A tripping GFCI can indicate a ground fault on the circuit, moisture in the box, or a worn-out GFCI. Our Mission Viejo electricians can diagnose the exact cause and repair or replace the outlet.' },
-      { question: 'Can you add an outlet where there isn\'t one?', answer: 'Yes. We install new outlets in any room, including dedicated circuits for appliances, home offices, and EV chargers. Call (949) 284-7981 to schedule.' },
+      { question: 'Can you add an outlet where there isn\'t one?', answer: 'Yes. We install new outlets in any room, including dedicated circuits for appliances, home offices, and EV chargers. Call (949) 312-6033 to schedule.' },
       { question: 'Do you install smart switches?', answer: 'Yes. We install smart switches and dimmers that integrate with home automation systems, including Wi-Fi and Z-Wave compatible models.' },
     ],
   },
@@ -317,7 +317,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/3990590/pexels-photo-3990590.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Ceiling fan installed in a Mission Viejo living room',
     metaTitle: 'Ceiling Fan Installation Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Ceiling fan installation in Mission Viejo, CA. Indoor, outdoor, dual-fan setups & fan/light combos. Licensed electricians. Call (949) 284-7981.',
+    metaDescription: 'Ceiling fan installation in Mission Viejo, CA. Indoor, outdoor, dual-fan setups & fan/light combos. Licensed electricians. Call (949) 312-6033.',
     h1: 'Ceiling Fan Installation in Mission Viejo, CA',
     summary: 'Safe, professional ceiling fan installation in Mission Viejo — including outdoor-rated fans, fan/light combos, and ceiling box upgrades.',
     intro: 'A ceiling fan improves comfort and reduces energy costs, but only if it\'s installed correctly. Ultimate Green Electric, Inc. provides ceiling fan installation in Mission Viejo for homes of every type. We ensure the ceiling box is properly rated and supported, the wiring is safe, and the fan is balanced and secure.',
@@ -338,7 +338,7 @@ export const SERVICES: ServiceInfo[] = [
     faqs: [
       { question: 'Can you install a ceiling fan where there\'s only a light fixture now?', answer: 'Yes. We replace the existing light box with a fan-rated box and use the existing wiring if it\'s in good condition. We\'ll inspect everything before installation.' },
       { question: 'Do you install outdoor ceiling fans?', answer: 'Absolutely. We install wet-rated ceiling fans on patios and in outdoor living spaces using proper weather-safe wiring and fixtures.' },
-      { question: 'How long does ceiling fan installation take?', answer: 'Most ceiling fan installations in Mission Viejo take 1 to 2 hours, including box replacement and wiring. We\'ll give you a time estimate when you call (949) 284-7981.' },
+      { question: 'How long does ceiling fan installation take?', answer: 'Most ceiling fan installations in Mission Viejo take 1 to 2 hours, including box replacement and wiring. We\'ll give you a time estimate when you call (949) 312-6033.' },
     ],
   },
   {
@@ -349,7 +349,7 @@ export const SERVICES: ServiceInfo[] = [
     image: 'https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician inspecting a residential electrical panel in Mission Viejo',
     metaTitle: 'Electrical Inspection Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Professional electrical inspection in Mission Viejo, CA. Home sale, insurance, safety inspections. Licensed electricians. Call (949) 284-7981.',
+    metaDescription: 'Professional electrical inspection in Mission Viejo, CA. Home sale, insurance, safety inspections. Licensed electricians. Call (949) 312-6033.',
     h1: 'Electrical Inspection in Mission Viejo, CA',
     summary: 'Comprehensive electrical inspections for home sales, insurance, and safety — performed by licensed Mission Viejo electricians.',
     intro: 'Whether you\'re buying a home, selling one, or just want peace of mind, a professional electrical inspection is one of the smartest investments you can make. Ultimate Green Electric, Inc. provides thorough electrical inspections in Mission Viejo, documenting the condition of your panel, wiring, outlets, grounding, and more.',
@@ -368,7 +368,7 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'How much does an electrical inspection cost?', answer: 'Inspection costs vary based on the size and age of your home. Call (949) 284-7981 for a quote. If you proceed with recommended repairs, the inspection fee is often credited toward the work.' },
+      { question: 'How much does an electrical inspection cost?', answer: 'Inspection costs vary based on the size and age of your home. Call (949) 312-6033 for a quote. If you proceed with recommended repairs, the inspection fee is often credited toward the work.' },
       { question: 'Do you provide a written report?', answer: 'Yes. Every electrical inspection includes a detailed written report with photos and prioritized recommendations that you can share with your real estate agent or insurance company.' },
       { question: 'Should I get an inspection if I\'m not selling?', answer: 'Yes, especially if your Mission Viejo home is over 25 years old. An inspection catches hazards before they become emergencies and gives you peace of mind.' },
     ],
@@ -378,16 +378,16 @@ export const SERVICES: ServiceInfo[] = [
 export const HOME_FAQS = [
   { question: 'What areas does Ultimate Green Electric serve?', answer: 'We are based in Mission Viejo and serve all of South Orange County, including Irvine, Dana Point, Laguna Hills, Laguna Niguel, Lake Forest, Aliso Viejo, San Juan Capistrano, Rancho Santa Margarita, and Newport Beach.' },
   { question: 'Are you licensed and insured?', answer: 'Yes. Ultimate Green Electric, Inc. is fully licensed (CA Lic #999000), bonded, and insured. All of our electricians hold current certifications and receive ongoing training.' },
-  { question: 'Do you offer free estimates?', answer: 'Yes, we provide free estimates on most residential and commercial electrical projects. Call (949) 284-7981 to schedule a visit from one of our electricians.' },
-  { question: 'Do you provide emergency electrical service?', answer: 'Yes. Emergency electrical services are available for Mission Viejo and surrounding areas. Call (949) 284-7981 any time, day or night.' },
+  { question: 'Do you offer free estimates?', answer: 'Yes, we provide free estimates on most residential and commercial electrical projects. Call (949) 312-6033 to schedule a visit from one of our electricians.' },
+  { question: 'Do you provide emergency electrical service?', answer: 'Yes. Emergency electrical services are available for Mission Viejo and surrounding areas. Call (949) 312-6033 any time, day or night.' },
   { question: 'What are your business hours?', answer: 'Our regular hours are Monday through Friday, 7:00 AM to 5:00 PM. Saturday and Sunday are by appointment only. Emergency service is available outside regular hours.' },
 ];
 
 export const GENERAL_FAQS = [
-  { question: 'Do you offer free estimates?', answer: 'Yes, we provide free estimates on most electrical projects. Call (949) 284-7981 to schedule a visit from one of our licensed electricians.' },
+  { question: 'Do you offer free estimates?', answer: 'Yes, we provide free estimates on most electrical projects. Call (949) 312-6033 to schedule a visit from one of our licensed electricians.' },
   { question: 'Are you licensed and insured?', answer: 'Yes. Ultimate Green Electric, Inc. is fully licensed (CA Lic #999000), bonded, and insured for your protection.' },
   { question: 'Do you serve my area?', answer: 'We are based in Mission Viejo and serve all of South Orange County, including Irvine, Dana Point, Laguna Hills, Laguna Niguel, Lake Forest, Aliso Viejo, and surrounding communities.' },
-  { question: 'Do you provide emergency service?', answer: 'Yes. Emergency electrical services are available. Call (949) 284-7981 any time, day or night.' },
+  { question: 'Do you provide emergency service?', answer: 'Yes. Emergency electrical services are available. Call (949) 312-6033 any time, day or night.' },
 ];
 
 export const TESTIMONIALS = [
