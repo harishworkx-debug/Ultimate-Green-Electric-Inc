@@ -5,7 +5,6 @@ export const BUSINESS = {
   phone: '+1 (949) 312-6033',
   phoneRaw: '+19493126033',
   phoneDisplay: '(949) 312-6033',
-  secondaryPhone: '(800) 663-1966',
   email: 'admin@msqelectric.com',
   license: '999000',
   street: '27525 Puerta Real Ste 300-140',
@@ -59,16 +58,16 @@ export const SERVICES: ServiceInfo[] = [
     shortTitle: 'Residential',
     icon: 'Home',
     image: 'https://images.pexels.com/photos/8961701/pexels-photo-8961701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    imageAlt: 'Electrician installing wiring in a Mission Viejo home',
-    metaTitle: 'Residential Electrician Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Trusted residential electrician in Mission Viejo, CA. Wiring, lighting, panel upgrades, outlets & more. Licensed, bonded, insured. Call (949) 312-6033.',
-    h1: 'Residential Electrician in Mission Viejo, CA',
-    summary: 'Dependable home electrical services for Mission Viejo families — from repairs and installations to full rewiring.',
-    intro: 'When you need a residential electrician in Mission Viejo, Ultimate Green Electric, Inc. delivers fast, reliable service at fair prices. Our licensed electricians handle everything from minor outlet repairs to complete home rewiring, always with a focus on safety and clean workmanship.',
+    imageAlt: 'Electrician installing wiring in a Orange County home',
+    metaTitle: 'Residential Electrician Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Trusted residential electrician in Orange County, CA. Wiring, lighting, panel upgrades, outlets & more. Licensed, bonded, insured. Call (949) 312-6033.',
+    h1: 'Residential Electrician in Orange County, CA',
+    summary: 'Dependable home electrical services for Orange County families — from repairs and installations to full rewiring.',
+    intro: 'When you need a residential electrician in Orange County, Ultimate Green Electric, Inc. delivers fast, reliable service at fair prices. Our licensed electricians handle everything from minor outlet repairs to complete home rewiring, always with a focus on safety and clean workmanship.',
     sections: [
       {
         heading: 'Whole-Home Electrical Solutions',
-        body: 'Your home\'s electrical system powers everything you do. Whether you\'re remodeling a kitchen, adding a new appliance, or troubleshooting flickering lights, our residential electricians have the training and tools to get the job done right the first time. We work on homes of every age — from newer builds in Mission Viejo to older properties that need careful panel and wiring upgrades to meet current code.',
+        body: 'Your home\'s electrical system powers everything you do. Whether you\'re remodeling a kitchen, adding a new appliance, or troubleshooting flickering lights, our residential electricians have the training and tools to get the job done right the first time. We work on homes of every age — from newer builds in Orange County to older properties that need careful panel and wiring upgrades to meet current code.',
       },
       {
         heading: 'Safety First, Always',
@@ -80,9 +79,9 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'Do you offer free estimates for residential electrical work?', answer: 'Yes, we provide free estimates on most residential projects. Call (949) 312-6033 to schedule a visit from one of our Mission Viejo electricians.' },
+      { question: 'Do you offer free estimates for residential electrical work?', answer: 'Yes, we provide free estimates on most residential projects. Call (949) 312-6033 to schedule a visit from one of our Orange County electricians.' },
       { question: 'Are your electricians licensed and insured?', answer: 'Absolutely. All of our electricians are licensed (CA Lic #999000), bonded, and insured for your protection and peace of mind.' },
-      { question: 'Can you work on older homes in Mission Viejo?', answer: 'Yes. We frequently service older Mission Viejo homes, including panel upgrades, rewiring, and bringing systems up to current electrical code.' },
+      { question: 'Can you work on older homes in Orange County?', answer: 'Yes. We frequently service older Orange County homes, including panel upgrades, rewiring, and bringing systems up to current electrical code.' },
     ],
   },
   {
@@ -92,11 +91,11 @@ export const SERVICES: ServiceInfo[] = [
     icon: 'Building2',
     image: 'https://images.pexels.com/photos/3615735/pexels-photo-3615735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Commercial electrician working on electrical wiring in a building',
-    metaTitle: 'Commercial Electrician Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Reliable commercial electrician in Mission Viejo, CA. Tenant improvements, lighting, panel upgrades & emergency repair. Call (949) 312-6033.',
-    h1: 'Commercial Electrician in Mission Viejo, CA',
-    summary: 'Electrical contracting for Mission Viejo businesses — tenant build-outs, lighting retrofits, panel upgrades, and fast emergency repair.',
-    intro: 'Downtime costs your business money. Ultimate Green Electric, Inc. provides commercial electrical services in Mission Viejo that keep your operations running. From office tenant improvements to retail lighting upgrades and industrial wiring, our commercial electricians deliver code-compliant work on schedule and on budget.',
+    metaTitle: 'Commercial Electrician Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Reliable commercial electrician in Orange County, CA. Tenant improvements, lighting, panel upgrades & emergency repair. Call (949) 312-6033.',
+    h1: 'Commercial Electrician in Orange County, CA',
+    summary: 'Electrical contracting for Orange County businesses — tenant build-outs, lighting retrofits, panel upgrades, and fast emergency repair.',
+    intro: 'Downtime costs your business money. Ultimate Green Electric, Inc. provides commercial electrical services in Orange County that keep your operations running. From office tenant improvements to retail lighting upgrades and industrial wiring, our commercial electricians deliver code-compliant work on schedule and on budget.',
     sections: [
       {
         heading: 'Tenant Improvements & Build-Outs',
@@ -104,7 +103,7 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: 'Lighting Retrofits & Energy Savings',
-        body: 'Upgrading to LED lighting is one of the fastest-payback investments a business can make. We retrofit office suites, warehouses, retail stores, and restaurants throughout Mission Viejo with energy-efficient lighting that slashes electricity bills and improves light quality.',
+        body: 'Upgrading to LED lighting is one of the fastest-payback investments a business can make. We retrofit office suites, warehouses, retail stores, and restaurants throughout Orange County with energy-efficient lighting that slashes electricity bills and improves light quality.',
       },
       {
         heading: 'Minimizing Business Disruption',
@@ -112,9 +111,9 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'Can you work after business hours to avoid downtime?', answer: 'Yes. We offer flexible scheduling including evenings and weekend appointments for commercial clients in Mission Viejo. Call (949) 312-6033 to arrange a time that works for your business.' },
+      { question: 'Can you work after business hours to avoid downtime?', answer: 'Yes. We offer flexible scheduling including evenings and weekend appointments for commercial clients in Orange County. Call (949) 312-6033 to arrange a time that works for your business.' },
       { question: 'Do you handle large commercial projects?', answer: 'We do. From single-office tenant improvements to multi-unit retail and industrial wiring projects, our team has the capacity and licensing to handle commercial work of any size.' },
-      { question: 'Can you help with energy-efficiency upgrades?', answer: 'Yes. We specialize in LED lighting retrofits and energy-saving electrical upgrades that reduce operating costs for Mission Viejo businesses.' },
+      { question: 'Can you help with energy-efficiency upgrades?', answer: 'Yes. We specialize in LED lighting retrofits and energy-saving electrical upgrades that reduce operating costs for Orange County businesses.' },
     ],
   },
   {
@@ -124,11 +123,11 @@ export const SERVICES: ServiceInfo[] = [
     icon: 'Wrench',
     image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician repairing circuit breaker panel with colorful wires',
-    metaTitle: 'Electrical Repair Mission Viejo CA | Fast & Reliable | Ultimate Green Electric',
-    metaDescription: 'Fast electrical repair in Mission Viejo, CA. Flickering lights, tripping breakers, dead outlets & more. Licensed electricians. Call (949) 312-6033.',
-    h1: 'Electrical Repair in Mission Viejo, CA',
-    summary: 'From tripping breakers to dead outlets, our Mission Viejo electricians diagnose and fix electrical problems fast.',
-    intro: 'Electrical problems rarely happen at a convenient time. Whether your breaker keeps tripping, an outlet has gone dead, or your lights are flickering, Ultimate Green Electric, Inc. provides prompt electrical repair service throughout Mission Viejo. Our electricians diagnose the root cause — not just the symptom — and fix it safely to code.',
+    metaTitle: 'Electrical Repair Orange County CA | Fast & Reliable | Ultimate Green Electric',
+    metaDescription: 'Fast electrical repair in Orange County, CA. Flickering lights, tripping breakers, dead outlets & more. Licensed electricians. Call (949) 312-6033.',
+    h1: 'Electrical Repair in Orange County, CA',
+    summary: 'From tripping breakers to dead outlets, our Orange County electricians diagnose and fix electrical problems fast.',
+    intro: 'Electrical problems rarely happen at a convenient time. Whether your breaker keeps tripping, an outlet has gone dead, or your lights are flickering, Ultimate Green Electric, Inc. provides prompt electrical repair service throughout Orange County. Our electricians diagnose the root cause — not just the symptom — and fix it safely to code.',
     sections: [
       {
         heading: 'Common Electrical Repairs We Handle',
@@ -140,13 +139,13 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: 'Same-Day Service Available',
-        body: 'Many electrical repairs in Mission Viejo can be completed the same day you call. We keep our service vehicles fully stocked with common parts so we can resolve most issues in a single visit. Call (949) 312-6033 and we\'ll dispatch an electrician to your door.',
+        body: 'Many electrical repairs in Orange County can be completed the same day you call. We keep our service vehicles fully stocked with common parts so we can resolve most issues in a single visit. Call (949) 312-6033 and we\'ll dispatch an electrician to your door.',
       },
     ],
     faqs: [
-      { question: 'How quickly can you respond to a repair call?', answer: 'We offer same-day service for most electrical repairs in Mission Viejo. Call (949) 312-6033 and we\'ll send an electrician as quickly as possible.' },
+      { question: 'How quickly can you respond to a repair call?', answer: 'We offer same-day service for most electrical repairs in Orange County. Call (949) 312-6033 and we\'ll send an electrician as quickly as possible.' },
       { question: 'Is flickering a light an emergency?', answer: 'Flickering can indicate a loose connection or overloaded circuit. If only one light flickers, it may be a simple fix. If multiple lights flicker throughout the house, call us right away — it could signal a serious wiring or panel problem.' },
-      { question: 'Do you charge for travel time within Mission Viejo?', answer: 'We do not charge extra travel fees for service calls within our Mission Viejo service area. You\'ll know all costs before we begin any repair work.' },
+      { question: 'Do you charge for travel time within Orange County?', answer: 'We do not charge extra travel fees for service calls within our Orange County service area. You\'ll know all costs before we begin any repair work.' },
     ],
   },
   {
@@ -156,19 +155,19 @@ export const SERVICES: ServiceInfo[] = [
     icon: 'Zap',
     image: 'https://images.pexels.com/photos/17924298/pexels-photo-17924298.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Emergency electrician working on an outdoor electrical panel',
-    metaTitle: 'Emergency Electrician Mission Viejo CA | 24/7 Fast Response | Ultimate Green Electric',
-    metaDescription: '24/7 emergency electrician in Mission Viejo, CA. Power outages, sparking, burning smell — call (949) 312-6033 for fast emergency electrical service.',
-    h1: 'Emergency Electrician in Mission Viejo, CA',
-    summary: 'Electrical emergency in Mission Viejo? We respond fast — sparking, burning smells, power outages, and more. Call (949) 312-6033.',
-    intro: 'An electrical emergency can happen at any hour. Ultimate Green Electric, Inc. offers emergency electrician service in Mission Viejo for situations that can\'t wait — sparking outlets, burning smells, sudden power loss, and other urgent hazards. Our electricians are ready to respond quickly and make your property safe again.',
+    metaTitle: 'Emergency Electrician Orange County CA | 24/7 Fast Response | Ultimate Green Electric',
+    metaDescription: '24/7 emergency electrician in Orange County, CA. Power outages, sparking, burning smell — call (949) 312-6033 for fast emergency electrical service.',
+    h1: 'Emergency Electrician in Orange County, CA',
+    summary: 'Electrical emergency in Orange County? We respond fast — sparking, burning smells, power outages, and more. Call (949) 312-6033.',
+    intro: 'An electrical emergency can happen at any hour. Ultimate Green Electric, Inc. offers emergency electrician service in Orange County for situations that can\'t wait — sparking outlets, burning smells, sudden power loss, and other urgent hazards. Our electricians are ready to respond quickly and make your property safe again.',
     sections: [
       {
         heading: 'When to Call an Emergency Electrician',
         body: 'Call us immediately if you experience: sparking from an outlet or switch, a burning plastic smell near electrical panels or outlets, buzzing or humming from your panel, a breaker that won\'t stay reset, water damage near wiring, or a complete power outage that isn\'t a utility company issue. These situations are fire hazards and need professional attention right away.',
       },
       {
-        heading: 'Fast Response in Mission Viejo',
-        body: 'Because we\'re based in Mission Viejo, we can reach most local addresses quickly. Our emergency electricians arrive in fully stocked vehicles ready to stabilize the situation, identify the hazard, and perform immediate repairs or safe temporary fixes until a permanent solution can be completed.',
+        heading: 'Fast Response in Orange County',
+        body: 'Because we\'re based in Orange County, we can reach most local addresses quickly. Our emergency electricians arrive in fully stocked vehicles ready to stabilize the situation, identify the hazard, and perform immediate repairs or safe temporary fixes until a permanent solution can be completed.',
       },
       {
         heading: 'Safety First — What to Do While You Wait',
@@ -176,9 +175,9 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'Do you offer 24/7 emergency electrical service?', answer: 'Yes. Emergency electrical services are available in Mission Viejo and surrounding areas. Call (949) 312-6033 any time, day or night.' },
+      { question: 'Do you offer 24/7 emergency electrical service?', answer: 'Yes. Emergency electrical services are available in Orange County and surrounding areas. Call (949) 312-6033 any time, day or night.' },
       { question: 'What counts as an electrical emergency?', answer: 'Sparking, burning smells, buzzing from your panel, repeated breaker tripping, water near wiring, and total power loss are all emergencies. When in doubt, call — it\'s better to be safe.' },
-      { question: 'How fast can an emergency electrician get to my Mission Viejo home?', answer: 'Because we are based in Mission Viejo, response times are typically very fast. We\'ll give you an estimated arrival time when you call (949) 312-6033.' },
+      { question: 'How fast can an emergency electrician get to my Orange County home?', answer: 'Because we are based in Orange County, response times are typically very fast. We\'ll give you an estimated arrival time when you call (949) 312-6033.' },
     ],
   },
   {
@@ -187,12 +186,12 @@ export const SERVICES: ServiceInfo[] = [
     shortTitle: 'Panel Upgrades',
     icon: 'LayoutGrid',
     image: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    imageAlt: 'Electrician installing a new electrical panel in Mission Viejo',
-    metaTitle: 'Electrical Panel Upgrade Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Electrical panel upgrade in Mission Viejo, CA. Replace outdated 100A panels, add capacity for EV chargers & additions. Call (949) 312-6033.',
-    h1: 'Electrical Panel Upgrade in Mission Viejo, CA',
-    summary: 'Upgrade your Mission Viejo home\'s electrical panel for safety, capacity, and code compliance. Free estimates available.',
-    intro: 'If your home still has a 100-amp panel — or worse, an outdated fuse box — it may not handle the demands of modern life. Ultimate Green Electric, Inc. performs electrical panel upgrades in Mission Viejo to bring your home up to code, add capacity for new appliances or EV chargers, and eliminate the fire risk of aging panels.',
+    imageAlt: 'Electrician installing a new electrical panel in Orange County',
+    metaTitle: 'Electrical Panel Upgrade Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Electrical panel upgrade in Orange County, CA. Replace outdated 100A panels, add capacity for EV chargers & additions. Call (949) 312-6033.',
+    h1: 'Electrical Panel Upgrade in Orange County, CA',
+    summary: 'Upgrade your Orange County home\'s electrical panel for safety, capacity, and code compliance. Free estimates available.',
+    intro: 'If your home still has a 100-amp panel — or worse, an outdated fuse box — it may not handle the demands of modern life. Ultimate Green Electric, Inc. performs electrical panel upgrades in Orange County to bring your home up to code, add capacity for new appliances or EV chargers, and eliminate the fire risk of aging panels.',
     sections: [
       {
         heading: 'Signs You Need a Panel Upgrade',
@@ -200,16 +199,16 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: '200-Amp and 400-Amp Upgrades',
-        body: 'We upgrade Mission Viejo homes from 100-amp to 200-amp or 400-amp service, including new meter bases, grounding, bonding, and all required permitting and inspection. Modern panels give you headroom for EV chargers, tankless water heaters, solar tie-ins, home additions, and any future electrical expansion.',
+        body: 'We upgrade Orange County homes from 100-amp to 200-amp or 400-amp service, including new meter bases, grounding, bonding, and all required permitting and inspection. Modern panels give you headroom for EV chargers, tankless water heaters, solar tie-ins, home additions, and any future electrical expansion.',
       },
       {
         heading: 'Permitting & Inspection Handled For You',
-        body: 'Every panel upgrade we do in Mission Viejo is fully permitted and inspected by the city. We handle all paperwork and coordinate with the inspector so you don\'t have to. You get documentation that proves the work was done to code — important for insurance and resale.',
+        body: 'Every panel upgrade we do in Orange County is fully permitted and inspected by the city. We handle all paperwork and coordinate with the inspector so you don\'t have to. You get documentation that proves the work was done to code — important for insurance and resale.',
       },
     ],
     faqs: [
-      { question: 'How long does a panel upgrade take?', answer: 'Most residential panel upgrades in Mission Viejo are completed in one day. Larger 400-amp upgrades or service relocations may take longer. We\'ll give you a clear timeline during your free estimate.' },
-      { question: 'Do I need a permit for a panel upgrade?', answer: 'Yes, panel upgrades require a city permit and inspection in Mission Viejo. We handle all permitting and inspection coordination for you.' },
+      { question: 'How long does a panel upgrade take?', answer: 'Most residential panel upgrades in Orange County are completed in one day. Larger 400-amp upgrades or service relocations may take longer. We\'ll give you a clear timeline during your free estimate.' },
+      { question: 'Do I need a permit for a panel upgrade?', answer: 'Yes, panel upgrades require a city permit and inspection in Orange County. We handle all permitting and inspection coordination for you.' },
       { question: 'How much does a panel upgrade cost?', answer: 'Costs vary based on amperage and whether your meter base or service entrance also needs upgrading. Call (949) 312-6033 for a free estimate tailored to your home.' },
     ],
   },
@@ -219,12 +218,12 @@ export const SERVICES: ServiceInfo[] = [
     shortTitle: 'EV Chargers',
     icon: 'BatteryCharging',
     image: 'https://images.pexels.com/photos/5391509/pexels-photo-5391509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    imageAlt: 'Wall-mounted EV charger installed at a Mission Viejo home',
-    metaTitle: 'EV Charger Installation Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Expert EV charger installation in Mission Viejo, CA. Tesla, ChargePoint, JuiceBox & more. Level 2 home charging stations. Call (949) 312-6033.',
-    h1: 'EV Charger Installation in Mission Viejo, CA',
-    summary: 'Level 2 home EV charger installation in Mission Viejo. Tesla, ChargePoint, JuiceBox — we install all major brands safely and to code.',
-    intro: 'More Mission Viejo residents are driving electric, and a dedicated Level 2 home charger is the best way to keep your vehicle ready to go. Ultimate Green Electric, Inc. installs EV charging stations from all major brands — Tesla, ChargePoint, JuiceBox, Grizzl-E, and more — with the proper dedicated circuit, breaker, and safety components your vehicle requires.',
+    imageAlt: 'Wall-mounted EV charger installed at a Orange County home',
+    metaTitle: 'EV Charger Installation Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Expert EV charger installation in Orange County, CA. Tesla, ChargePoint, JuiceBox & more. Level 2 home charging stations. Call (949) 312-6033.',
+    h1: 'EV Charger Installation in Orange County, CA',
+    summary: 'Level 2 home EV charger installation in Orange County. Tesla, ChargePoint, JuiceBox — we install all major brands safely and to code.',
+    intro: 'More Orange County residents are driving electric, and a dedicated Level 2 home charger is the best way to keep your vehicle ready to go. Ultimate Green Electric, Inc. installs EV charging stations from all major brands — Tesla, ChargePoint, JuiceBox, Grizzl-E, and more — with the proper dedicated circuit, breaker, and safety components your vehicle requires.',
     sections: [
       {
         heading: 'Level 2 Home Charging — What You Need',
@@ -240,8 +239,8 @@ export const SERVICES: ServiceInfo[] = [
       },
     ],
     faqs: [
-      { question: 'How much does EV charger installation cost in Mission Viejo?', answer: 'Cost depends on your panel capacity, the distance from the panel to the charger location, and whether a panel upgrade is needed. Call (949) 312-6033 for a free estimate.' },
-      { question: 'Can you install a Tesla Wall Connector?', answer: 'Yes. We install Tesla Wall Connectors and all other major Level 2 EV charger brands for Mission Viejo residents.' },
+      { question: 'How much does EV charger installation cost in Orange County?', answer: 'Cost depends on your panel capacity, the distance from the panel to the charger location, and whether a panel upgrade is needed. Call (949) 312-6033 for a free estimate.' },
+      { question: 'Can you install a Tesla Wall Connector?', answer: 'Yes. We install Tesla Wall Connectors and all other major Level 2 EV charger brands for Orange County residents.' },
       { question: 'Do I need a panel upgrade for an EV charger?', answer: 'It depends on your panel\'s available capacity. We\'ll inspect your panel during the estimate and let you know if an upgrade is needed before any work begins.' },
     ],
   },
@@ -251,20 +250,20 @@ export const SERVICES: ServiceInfo[] = [
     shortTitle: 'Lighting',
     icon: 'Lightbulb',
     image: 'https://images.pexels.com/photos/1253128/pexels-photo-1253128.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    imageAlt: 'Modern lighting installation in a Mission Viejo home',
-    metaTitle: 'Lighting Installation Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Professional lighting installation in Mission Viejo, CA. Recessed lighting, LED retrofit, outdoor & landscape lighting. Call (949) 312-6033.',
-    h1: 'Lighting Installation in Mission Viejo, CA',
-    summary: 'Recessed lighting, LED retrofits, outdoor and landscape lighting — installed by licensed Mission Viejo electricians.',
-    intro: 'The right lighting transforms a space. Ultimate Green Electric, Inc. provides professional lighting installation in Mission Viejo for homes and businesses — from recessed can lighting and LED retrofits to outdoor security and landscape lighting. Our electricians handle the wiring, switches, dimmers, and fixtures so everything works beautifully and safely.',
+    imageAlt: 'Modern lighting installation in a Orange County home',
+    metaTitle: 'Lighting Installation Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Professional lighting installation in Orange County, CA. Recessed lighting, LED retrofit, outdoor & landscape lighting. Call (949) 312-6033.',
+    h1: 'Lighting Installation in Orange County, CA',
+    summary: 'Recessed lighting, LED retrofits, outdoor and landscape lighting — installed by licensed Orange County electricians.',
+    intro: 'The right lighting transforms a space. Ultimate Green Electric, Inc. provides professional lighting installation in Orange County for homes and businesses — from recessed can lighting and LED retrofits to outdoor security and landscape lighting. Our electricians handle the wiring, switches, dimmers, and fixtures so everything works beautifully and safely.',
     sections: [
       {
         heading: 'Recessed & Interior Lighting',
-        body: 'Recessed lighting is one of the most popular upgrades in Mission Viejo homes. It brightens kitchens, living rooms, and hallways while making ceilings look cleaner and higher. We install new recessed fixtures, convert old cans to LED, and add dimmer switches for perfect light control in every room.',
+        body: 'Recessed lighting is one of the most popular upgrades in Orange County homes. It brightens kitchens, living rooms, and hallways while making ceilings look cleaner and higher. We install new recessed fixtures, convert old cans to LED, and add dimmer switches for perfect light control in every room.',
       },
       {
         heading: 'LED Retrofits That Save Money',
-        body: 'Switching to LED can cut your lighting energy use by up to 80%. We retrofit existing fixtures with LED bulbs, drivers, or full replacement fixtures in homes and commercial spaces throughout Mission Viejo. Most retrofits pay for themselves in energy savings within one to two years.',
+        body: 'Switching to LED can cut your lighting energy use by up to 80%. We retrofit existing fixtures with LED bulbs, drivers, or full replacement fixtures in homes and commercial spaces throughout Orange County. Most retrofits pay for themselves in energy savings within one to two years.',
       },
       {
         heading: 'Outdoor, Security & Landscape Lighting',
@@ -273,7 +272,7 @@ export const SERVICES: ServiceInfo[] = [
     ],
     faqs: [
       { question: 'Can you install dimmer switches with my new lighting?', answer: 'Yes. We install compatible dimmer switches with all lighting installations. We\'ll make sure the dimmer is rated for the specific fixture and bulb type you choose.' },
-      { question: 'Do you install outdoor and landscape lighting?', answer: 'Absolutely. We install pathway, security, and landscape lighting throughout Mission Viejo using weather-rated fixtures and proper outdoor wiring methods.' },
+      { question: 'Do you install outdoor and landscape lighting?', answer: 'Absolutely. We install pathway, security, and landscape lighting throughout Orange County using weather-rated fixtures and proper outdoor wiring methods.' },
       { question: 'Can you retrofit my existing fixtures to LED?', answer: 'Yes. We convert existing fixtures to LED in homes and businesses, which can reduce lighting energy costs by up to 80%.' },
     ],
   },
@@ -284,15 +283,15 @@ export const SERVICES: ServiceInfo[] = [
     icon: 'Plug',
     image: 'https://images.pexels.com/photos/5691494/pexels-photo-5691494.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
     imageAlt: 'Electrician installing a new electrical outlet on a wall',
-    metaTitle: 'Outlet & Switch Repair Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Outlet and switch repair in Mission Viejo, CA. Dead outlets, GFCI repair, dimmer installation & more. Licensed electricians. Call (949) 312-6033.',
-    h1: 'Outlet & Switch Repair in Mission Viejo, CA',
-    summary: 'Dead outlets, faulty switches, GFCI troubleshooting, and new installations — handled by Mission Viejo\'s trusted electricians.',
-    intro: 'Outlets and switches are the points where you interact with your electrical system every day. When one fails, it\'s more than an inconvenience — it can be a safety hazard. Ultimate Green Electric, Inc. repairs and replaces outlets, switches, and GFCIs throughout Mission Viejo, bringing your system up to code and restoring safe, reliable power.',
+    metaTitle: 'Outlet & Switch Repair Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Outlet and switch repair in Orange County, CA. Dead outlets, GFCI repair, dimmer installation & more. Licensed electricians. Call (949) 312-6033.',
+    h1: 'Outlet & Switch Repair in Orange County, CA',
+    summary: 'Dead outlets, faulty switches, GFCI troubleshooting, and new installations — handled by Orange County\'s trusted electricians.',
+    intro: 'Outlets and switches are the points where you interact with your electrical system every day. When one fails, it\'s more than an inconvenience — it can be a safety hazard. Ultimate Green Electric, Inc. repairs and replaces outlets, switches, and GFCIs throughout Orange County, bringing your system up to code and restoring safe, reliable power.',
     sections: [
       {
         heading: 'GFCI Outlets — Code & Safety',
-        body: 'Ground Fault Circuit Interrupter (GFCI) outlets are required by code in kitchens, bathrooms, garages, and outdoor areas. If your GFCI keeps tripping or won\'t reset, it may be worn out or there may be a ground fault on the circuit. We test, diagnose, and replace GFCI outlets to keep your Mission Viejo home safe and compliant.',
+        body: 'Ground Fault Circuit Interrupter (GFCI) outlets are required by code in kitchens, bathrooms, garages, and outdoor areas. If your GFCI keeps tripping or won\'t reset, it may be worn out or there may be a ground fault on the circuit. We test, diagnose, and replace GFCI outlets to keep your Orange County home safe and compliant.',
       },
       {
         heading: 'New Outlets & Relocations',
@@ -300,11 +299,11 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: 'Switch Repair & Smart Switches',
-        body: 'A switch that feels warm, makes a popping sound, or doesn\'t always work needs attention. We repair and replace single-pole, 3-way, and 4-way switches. We also install smart switches and dimmers that work with home automation systems — ask us about upgrading your Mission Viejo home.',
+        body: 'A switch that feels warm, makes a popping sound, or doesn\'t always work needs attention. We repair and replace single-pole, 3-way, and 4-way switches. We also install smart switches and dimmers that work with home automation systems — ask us about upgrading your Orange County home.',
       },
     ],
     faqs: [
-      { question: 'Why is my GFCI outlet keeps tripping?', answer: 'A tripping GFCI can indicate a ground fault on the circuit, moisture in the box, or a worn-out GFCI. Our Mission Viejo electricians can diagnose the exact cause and repair or replace the outlet.' },
+      { question: 'Why is my GFCI outlet keeps tripping?', answer: 'A tripping GFCI can indicate a ground fault on the circuit, moisture in the box, or a worn-out GFCI. Our Orange County electricians can diagnose the exact cause and repair or replace the outlet.' },
       { question: 'Can you add an outlet where there isn\'t one?', answer: 'Yes. We install new outlets in any room, including dedicated circuits for appliances, home offices, and EV chargers. Call (949) 312-6033 to schedule.' },
       { question: 'Do you install smart switches?', answer: 'Yes. We install smart switches and dimmers that integrate with home automation systems, including Wi-Fi and Z-Wave compatible models.' },
     ],
@@ -315,12 +314,12 @@ export const SERVICES: ServiceInfo[] = [
     shortTitle: 'Ceiling Fans',
     icon: 'Fan',
     image: 'https://images.pexels.com/photos/3990590/pexels-photo-3990590.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    imageAlt: 'Ceiling fan installed in a Mission Viejo living room',
-    metaTitle: 'Ceiling Fan Installation Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Ceiling fan installation in Mission Viejo, CA. Indoor, outdoor, dual-fan setups & fan/light combos. Licensed electricians. Call (949) 312-6033.',
-    h1: 'Ceiling Fan Installation in Mission Viejo, CA',
-    summary: 'Safe, professional ceiling fan installation in Mission Viejo — including outdoor-rated fans, fan/light combos, and ceiling box upgrades.',
-    intro: 'A ceiling fan improves comfort and reduces energy costs, but only if it\'s installed correctly. Ultimate Green Electric, Inc. provides ceiling fan installation in Mission Viejo for homes of every type. We ensure the ceiling box is properly rated and supported, the wiring is safe, and the fan is balanced and secure.',
+    imageAlt: 'Ceiling fan installed in a Orange County living room',
+    metaTitle: 'Ceiling Fan Installation Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Ceiling fan installation in Orange County, CA. Indoor, outdoor, dual-fan setups & fan/light combos. Licensed electricians. Call (949) 312-6033.',
+    h1: 'Ceiling Fan Installation in Orange County, CA',
+    summary: 'Safe, professional ceiling fan installation in Orange County — including outdoor-rated fans, fan/light combos, and ceiling box upgrades.',
+    intro: 'A ceiling fan improves comfort and reduces energy costs, but only if it\'s installed correctly. Ultimate Green Electric, Inc. provides ceiling fan installation in Orange County for homes of every type. We ensure the ceiling box is properly rated and supported, the wiring is safe, and the fan is balanced and secure.',
     sections: [
       {
         heading: 'Proper Support Matters',
@@ -328,7 +327,7 @@ export const SERVICES: ServiceInfo[] = [
       },
       {
         heading: 'Indoor & Outdoor Fans',
-        body: 'We install ceiling fans in bedrooms, living rooms, patios, and gazebos throughout Mission Viejo. For outdoor locations, we use wet-rated fans and weather-safe wiring. We also install fan/light combos with remote controls and wall switches, including dual-fan and dual-light control setups.',
+        body: 'We install ceiling fans in bedrooms, living rooms, patios, and gazebos throughout Orange County. For outdoor locations, we use wet-rated fans and weather-safe wiring. We also install fan/light combos with remote controls and wall switches, including dual-fan and dual-light control setups.',
       },
       {
         heading: 'Existing Wiring & Remote Controls',
@@ -338,7 +337,7 @@ export const SERVICES: ServiceInfo[] = [
     faqs: [
       { question: 'Can you install a ceiling fan where there\'s only a light fixture now?', answer: 'Yes. We replace the existing light box with a fan-rated box and use the existing wiring if it\'s in good condition. We\'ll inspect everything before installation.' },
       { question: 'Do you install outdoor ceiling fans?', answer: 'Absolutely. We install wet-rated ceiling fans on patios and in outdoor living spaces using proper weather-safe wiring and fixtures.' },
-      { question: 'How long does ceiling fan installation take?', answer: 'Most ceiling fan installations in Mission Viejo take 1 to 2 hours, including box replacement and wiring. We\'ll give you a time estimate when you call (949) 312-6033.' },
+      { question: 'How long does ceiling fan installation take?', answer: 'Most ceiling fan installations in Orange County take 1 to 2 hours, including box replacement and wiring. We\'ll give you a time estimate when you call (949) 312-6033.' },
     ],
   },
   {
@@ -347,20 +346,20 @@ export const SERVICES: ServiceInfo[] = [
     shortTitle: 'Inspections',
     icon: 'ClipboardCheck',
     image: 'https://images.pexels.com/photos/32497160/pexels-photo-32497160.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    imageAlt: 'Electrician inspecting a residential electrical panel in Mission Viejo',
-    metaTitle: 'Electrical Inspection Mission Viejo CA | Ultimate Green Electric',
-    metaDescription: 'Professional electrical inspection in Mission Viejo, CA. Home sale, insurance, safety inspections. Licensed electricians. Call (949) 312-6033.',
-    h1: 'Electrical Inspection in Mission Viejo, CA',
-    summary: 'Comprehensive electrical inspections for home sales, insurance, and safety — performed by licensed Mission Viejo electricians.',
-    intro: 'Whether you\'re buying a home, selling one, or just want peace of mind, a professional electrical inspection is one of the smartest investments you can make. Ultimate Green Electric, Inc. provides thorough electrical inspections in Mission Viejo, documenting the condition of your panel, wiring, outlets, grounding, and more.',
+    imageAlt: 'Electrician inspecting a residential electrical panel in Orange County',
+    metaTitle: 'Electrical Inspection Orange County CA | Ultimate Green Electric',
+    metaDescription: 'Professional electrical inspection in Orange County, CA. Home sale, insurance, safety inspections. Licensed electricians. Call (949) 312-6033.',
+    h1: 'Electrical Inspection in Orange County, CA',
+    summary: 'Comprehensive electrical inspections for home sales, insurance, and safety — performed by licensed Orange County electricians.',
+    intro: 'Whether you\'re buying a home, selling one, or just want peace of mind, a professional electrical inspection is one of the smartest investments you can make. Ultimate Green Electric, Inc. provides thorough electrical inspections in Orange County, documenting the condition of your panel, wiring, outlets, grounding, and more.',
     sections: [
       {
         heading: 'Home Sale & Real Estate Inspections',
-        body: 'If you\'re buying or selling a home in Mission Viejo, an electrical inspection reveals the true condition of the system — not just what a general home inspector can see. We check the panel for proper sizing and labeling, test outlets and GFCIs, inspect visible wiring for age or damage, verify grounding and bonding, and flag any code violations or safety hazards.',
+        body: 'If you\'re buying or selling a home in Orange County, an electrical inspection reveals the true condition of the system — not just what a general home inspector can see. We check the panel for proper sizing and labeling, test outlets and GFCIs, inspect visible wiring for age or damage, verify grounding and bonding, and flag any code violations or safety hazards.',
       },
       {
         heading: 'Insurance & Safety Inspections',
-        body: 'Some insurance companies require an electrical inspection before writing or renewing a policy, especially for older homes. We provide the detailed written inspection reports insurers need. Even if you\'re not required to get one, a safety inspection is worthwhile for any Mission Viejo home over 25 years old.',
+        body: 'Some insurance companies require an electrical inspection before writing or renewing a policy, especially for older homes. We provide the detailed written inspection reports insurers need. Even if you\'re not required to get one, a safety inspection is worthwhile for any Orange County home over 25 years old.',
       },
       {
         heading: 'What Our Inspection Includes',
@@ -370,31 +369,27 @@ export const SERVICES: ServiceInfo[] = [
     faqs: [
       { question: 'How much does an electrical inspection cost?', answer: 'Inspection costs vary based on the size and age of your home. Call (949) 312-6033 for a quote. If you proceed with recommended repairs, the inspection fee is often credited toward the work.' },
       { question: 'Do you provide a written report?', answer: 'Yes. Every electrical inspection includes a detailed written report with photos and prioritized recommendations that you can share with your real estate agent or insurance company.' },
-      { question: 'Should I get an inspection if I\'m not selling?', answer: 'Yes, especially if your Mission Viejo home is over 25 years old. An inspection catches hazards before they become emergencies and gives you peace of mind.' },
+      { question: 'Should I get an inspection if I\'m not selling?', answer: 'Yes, especially if your Orange County home is over 25 years old. An inspection catches hazards before they become emergencies and gives you peace of mind.' },
     ],
   },
 ];
 
 export const HOME_FAQS = [
-  { question: 'What areas does Ultimate Green Electric serve?', answer: 'We are based in Mission Viejo and serve all of South Orange County, including Irvine, Dana Point, Laguna Hills, Laguna Niguel, Lake Forest, Aliso Viejo, San Juan Capistrano, Rancho Santa Margarita, and Newport Beach.' },
+  { question: 'What areas does Ultimate Green Electric serve?', answer: 'We are based in Orange County and serve all of South Orange County, including Irvine, Dana Point, Laguna Hills, Laguna Niguel, Lake Forest, Aliso Viejo, San Juan Capistrano, Rancho Santa Margarita, and Newport Beach.' },
   { question: 'Are you licensed and insured?', answer: 'Yes. Ultimate Green Electric, Inc. is fully licensed (CA Lic #999000), bonded, and insured. All of our electricians hold current certifications and receive ongoing training.' },
   { question: 'Do you offer free estimates?', answer: 'Yes, we provide free estimates on most residential and commercial electrical projects. Call (949) 312-6033 to schedule a visit from one of our electricians.' },
-  { question: 'Do you provide emergency electrical service?', answer: 'Yes. Emergency electrical services are available for Mission Viejo and surrounding areas. Call (949) 312-6033 any time, day or night.' },
+  { question: 'Do you provide emergency electrical service?', answer: 'Yes. Emergency electrical services are available for Orange County and surrounding areas. Call (949) 312-6033 any time, day or night.' },
   { question: 'What are your business hours?', answer: 'Our regular hours are Monday through Friday, 7:00 AM to 5:00 PM. Saturday and Sunday are by appointment only. Emergency service is available outside regular hours.' },
 ];
 
 export const GENERAL_FAQS = [
   { question: 'Do you offer free estimates?', answer: 'Yes, we provide free estimates on most electrical projects. Call (949) 312-6033 to schedule a visit from one of our licensed electricians.' },
   { question: 'Are you licensed and insured?', answer: 'Yes. Ultimate Green Electric, Inc. is fully licensed (CA Lic #999000), bonded, and insured for your protection.' },
-  { question: 'Do you serve my area?', answer: 'We are based in Mission Viejo and serve all of South Orange County, including Irvine, Dana Point, Laguna Hills, Laguna Niguel, Lake Forest, Aliso Viejo, and surrounding communities.' },
+  { question: 'Do you serve my area?', answer: 'We are based in Orange County and serve all of South Orange County, including Irvine, Dana Point, Laguna Hills, Laguna Niguel, Lake Forest, Aliso Viejo, and surrounding communities.' },
   { question: 'Do you provide emergency service?', answer: 'Yes. Emergency electrical services are available. Call (949) 312-6033 any time, day or night.' },
 ];
 
 export const TESTIMONIALS = [
-  { name: 'Robert M.', location: 'Mission Viejo, CA', text: 'Ultimate Green Electric upgraded our electrical panel from 100 to 200 amps. They were on time, professional, and the price was exactly what they quoted. Highly recommend.', rating: 5 },
-  { name: 'Jennifer L.', location: 'Irvine, CA', text: 'We needed a Tesla charger installed in our garage. They assessed our panel, installed a dedicated circuit, and had it done in a few hours. Excellent work and clean.', rating: 5 },
-  { name: 'David K.', location: 'Laguna Hills, CA', text: 'Our breaker kept tripping on a hot day. They came out the same afternoon, found a loose neutral wire, and fixed it. No upselling, just honest work. Will call again.', rating: 5 },
-  { name: 'Maria S.', location: 'Dana Point, CA', text: 'Beautiful job installing recessed lighting throughout our living room and kitchen. They were careful with our furniture and cleaned up perfectly. Our home looks amazing.', rating: 5 },
-  { name: 'Thomas R.', location: 'Lake Forest, CA', text: 'Commercial tenant improvement for our new office. They coordinated with our GC and the city inspector, finished on schedule, and passed inspection the first time.', rating: 5 },
-  { name: 'Patricia H.', location: 'Laguna Niguel, CA', text: 'After a power surge fried several outlets, they came out quickly, replaced the damaged outlets and GFCIs, and installed a whole-house surge protector. Great service.', rating: 5 },
+  { name: 'Mike Saghafi', location: 'Google Review', text: '', rating: 5, time: '2 years ago' },
+  { name: 'Gajanan M', location: 'Google Review · Local Guide', text: '', rating: 5, time: '9 years ago', ownerResponse: 'Thanks for taking the time to rate our service Gajanan!' },
 ];

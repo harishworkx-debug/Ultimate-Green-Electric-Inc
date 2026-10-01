@@ -2,117 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.ultimategreenelectric.com/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/about/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.ultimategreenelectric.com/about</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.ultimategreenelectric.com/contact</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-mission-viejo</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-irvine/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-irvine</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-dana-point/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-dana-point</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-laguna-hills/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-laguna-hills</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-laguna-niguel/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-laguna-niguel</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-lake-forest/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-lake-forest</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-aliso-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-aliso-viejo</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-san-juan-capistrano/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-san-juan-capistrano</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-rancho-santa-margarita/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-rancho-santa-margarita</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrician-newport-beach/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrician-newport-beach</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/residential-electrician-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/residential-electrician</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/commercial-electrician-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/commercial-electrician</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrical-repair-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrical-repair</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/emergency-electrician-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/emergency-electrician</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/panel-upgrade-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/panel-upgrade</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/ev-charger-installation-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/ev-charger-installation</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/lighting-installation-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/lighting-installation</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/outlet-switch-repair-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/outlet-switch-repair</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/ceiling-fan-installation-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/ceiling-fan-installation</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
   <url>
-    <loc>https://www.ultimategreenelectric.com/electrical-inspection-mission-viejo/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.ultimategreenelectric.com/electrical-inspection</loc>
+    <lastmod>2026-10-01</lastmod>
   </url>
 </urlset>

@@ -8,7 +8,7 @@ import MapSection from '@/components/MapSection';
 import Testimonials from '@/components/Testimonials';
 import { Link } from 'react-router-dom';
 import { SERVICES, SERVICE_LOCATIONS, BUSINESS, MAIN_LOCATION, GENERAL_FAQS } from '@/data/business';
-import { localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema } from '@/data/schema';
+import { localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema, organizationSchema, webSiteSchema } from '@/data/schema';
 
 export default function ServicePage({ service: serviceSlug }: { service: string }) {
   const service = SERVICES.find((s) => s.slug === serviceSlug);
@@ -31,6 +31,8 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
         description={pageDescription}
         canonical={canonical}
         schema={[
+          organizationSchema(),
+          webSiteSchema(),
           localBusinessSchema(),
           serviceSchema(service.title, service.slug, "South Orange County"),
           faqSchema(allFaqs),
@@ -47,6 +49,7 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
           <img
             src={service.image}
             alt={service.imageAlt}
+            fetchpriority="high"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/80 to-dark-950/50" />
@@ -84,11 +87,11 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
               <div className="flex items-center gap-4 text-sm text-dark-300">
                 <div className="flex items-center gap-1.5">
                   <Shield className="w-4 h-4 text-primary-400" />
-                  Licensed
+                  Licensed (Lic #{BUSINESS.license})
                 </div>
                 <div className="flex items-center gap-1.5">
-                  <Star className="w-4 h-4 text-accent-400" fill="currentColor" />
-                  5-Star
+                  <CheckCircle2 className="w-4 h-4 text-primary-400" />
+                  Bonded & Insured
                 </div>
               </div>
             </div>
@@ -160,7 +163,7 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
             {relatedServices.map((s) => (
               <Link
                 key={s.slug}
-                to={`/${s.slug}-${MAIN_LOCATION}`}
+                to={`/${s.slug}`}
                 className="group bg-white rounded-xl p-5 border border-dark-100 hover:border-primary-200 hover:shadow-md transition-all"
               >
                 <h3 className="font-semibold text-dark-800 group-hover:text-primary-600 transition-colors mb-2">

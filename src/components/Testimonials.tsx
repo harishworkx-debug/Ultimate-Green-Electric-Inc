@@ -23,17 +23,35 @@ export default function Testimonials() {
           {TESTIMONIALS.map((t, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-dark-100"
+              className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-dark-100 flex flex-col"
             >
-              <div className="flex items-center gap-1 mb-4">
-                {[...Array(t.rating)].map((_, j) => (
-                  <Star key={j} className="w-4 h-4 text-accent-500" fill="currentColor" />
-                ))}
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-1">
+                  {[...Array(t.rating)].map((_, j) => (
+                    <Star key={j} className="w-4 h-4 text-accent-500" fill="currentColor" />
+                  ))}
+                </div>
+                {t.time && <span className="text-xs text-dark-400">{t.time}</span>}
               </div>
-              <p className="text-dark-600 text-sm leading-relaxed mb-4 italic">
-                "{t.text}"
-              </p>
-              <div className="flex items-center gap-3 pt-4 border-t border-dark-100">
+              
+              {t.text ? (
+                <p className="text-dark-600 text-sm leading-relaxed mb-4 italic flex-grow">
+                  "{t.text}"
+                </p>
+              ) : (
+                <p className="text-dark-400 text-sm leading-relaxed mb-4 italic flex-grow">
+                  (Rated 5 stars without a written review)
+                </p>
+              )}
+
+              {t.ownerResponse && (
+                <div className="bg-dark-50 rounded-lg p-3 mb-4 border border-dark-100 text-xs">
+                  <div className="font-semibold text-dark-800 mb-1">Response from the owner</div>
+                  <p className="text-dark-600">{t.ownerResponse}</p>
+                </div>
+              )}
+
+              <div className="flex items-center gap-3 pt-4 border-t border-dark-100 mt-auto">
                 <div className="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center font-display font-bold text-primary-700">
                   {t.name.charAt(0)}
                 </div>

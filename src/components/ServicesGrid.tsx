@@ -25,7 +25,7 @@ export default function ServicesGrid() {
             return (
               <Link
                 key={service.slug}
-                to={`/${service.slug}-${MAIN_LOCATION}`}
+                to={`/${service.slug}`}
                 className="group bg-white rounded-2xl border border-dark-100 overflow-hidden hover:shadow-xl hover:border-primary-200 transition-all duration-300"
               >
                 <div className="relative h-48 overflow-hidden">

@@ -38,7 +38,6 @@ export default function MapSection() {
                   <a href={`tel:${BUSINESS.phoneRaw}`} className="text-primary-600 hover:text-primary-700 font-semibold transition-colors">
                     {BUSINESS.phoneDisplay}
                   </a>
-                  <div className="text-dark-400 text-sm">Secondary: {BUSINESS.secondaryPhone}</div>
                 </div>
               </div>
             </div>

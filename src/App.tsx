@@ -52,13 +52,12 @@ function parseRoute(pathname: string): { type: 'home' | 'about' | 'contact' | 's
 
 
 
-  // Check for service pages: /{service-slug}-{MAIN_LOCATION}
-  const suffix = `-${MAIN_LOCATION}`;
-  if (path.endsWith(suffix)) {
-    const serviceSlug = path.slice(0, -suffix.length);
-    const service = SERVICES.find((s) => s.slug === serviceSlug);
-    if (service) return { type: 'service', service: service.slug };
-  }
+  // Check for service pages: /{service-slug}
+  const service = SERVICES.find((s) => s.slug === path);
+  if (service) return { type: 'service', service: service.slug };
+  
+  // Check for electrical-services
+  if (path === 'electrical-services') return { type: 'home', hash: 'services' };
 
   return { type: '404' };
 }

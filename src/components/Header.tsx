@@ -78,7 +78,7 @@ export default function Header() {
                     {SERVICES.map((s) => (
                       <Link
                         key={s.slug}
-                        to={`/${s.slug}-${MAIN_LOCATION}`}
+                        to={`/${s.slug}`}
                         className="flex items-center gap-3 px-4 py-2.5 hover:bg-primary-50 transition-colors group"
                       >
                         <div className="w-8 h-8 rounded-lg bg-primary-100 flex items-center justify-center flex-shrink-0 group-hover:bg-primary-200 transition-colors">
@@ -183,7 +183,7 @@ export default function Header() {
                 {SERVICES.map((s) => (
                   <Link
                     key={s.slug}
-                    to={`/${s.slug}-${MAIN_LOCATION}`}
+                    to={`/${s.slug}`}
                     className="text-dark-300 hover:text-primary-400 text-sm font-medium py-2 transition-colors border-l border-dark-700 pl-3"
                   >
                     {s.title}

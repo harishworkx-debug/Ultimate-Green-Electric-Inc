@@ -11,7 +11,7 @@ import CTASection from '@/components/CTASection';
 import MapSection from '@/components/MapSection';
 import FAQAccordion from '@/components/FAQAccordion';
 import { BUSINESS, HOME_FAQS, SERVICES, MAIN_LOCATION } from '@/data/business';
-import { localBusinessSchema, faqSchema } from '@/data/schema';
+import { localBusinessSchema, faqSchema, organizationSchema, webSiteSchema } from '@/data/schema';
 
 export default function HomePage() {
   const popularServices = SERVICES.slice(0, 4);
@@ -19,10 +19,10 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="Ultimate Green Electric | Mission Viejo Electrician — (949) 312-6033"
+        title="Electrician in Mission Viejo, CA | Ultimate Green Electric"
         description="Top-rated licensed electrician in Mission Viejo, CA. Residential, commercial, emergency, panel upgrades, EV chargers & more. Serving all of South Orange County. Call (949) 312-6033."
         canonical="/"
-        schema={[localBusinessSchema(), faqSchema(HOME_FAQS)]}
+        schema={[organizationSchema(), webSiteSchema(), localBusinessSchema(), faqSchema(HOME_FAQS)]}
       />
 
       {/* Hero */}
@@ -31,6 +31,7 @@ export default function HomePage() {
           <img
             src="https://images.pexels.com/photos/17842832/pexels-photo-17842832.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600"
             alt="Professional electrician working on an electrical panel in Mission Viejo"
+            fetchpriority="high"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/80 to-dark-950/40" />
@@ -44,11 +45,11 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-4xl md:text-6xl font-display font-bold text-white text-balance leading-tight mb-6 animate-fade-in-up text-shadow-lg">
-              Mission Viejo's Trusted <span className="text-primary-400">Electrician</span>
+              Licensed Electrician in Mission Viejo, CA
             </h1>
 
             <p className="text-lg md:text-xl text-dark-200 mb-8 max-w-xl leading-relaxed animate-fade-in-up">
-              Licensed, bonded, and insured electricians for residential, commercial, and emergency electrical services. Fast response, fair pricing, quality work.
+              Residential & Commercial Electrical Services in Mission Viejo and Surrounding Orange County Communities.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up">
@@ -71,15 +72,15 @@ export default function HomePage() {
             <div className="flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-dark-300 animate-fade-in">
               <div className="flex items-center gap-2">
                 <Shield className="w-4 h-4 text-primary-400" />
-                Licensed & Insured
+                Licensed (Lic #{BUSINESS.license}), Bonded & Insured
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4 text-primary-400" />
-                Emergency Service
+                24/7 Emergency Availability
               </div>
               <div className="flex items-center gap-2">
-                <Star className="w-4 h-4 text-accent-400" fill="currentColor" />
-                5-Star Rated
+                <CheckCircle2 className="w-4 h-4 text-primary-400" />
+                Service Warranty
               </div>
               <div className="flex items-center gap-2">
                 <Zap className="w-4 h-4 text-primary-400" />
@@ -127,7 +128,7 @@ export default function HomePage() {
             {popularServices.map((s) => (
               <Link
                 key={s.slug}
-                to={`/${s.slug}-${MAIN_LOCATION}`}
+                to={`/${s.slug}`}
                 className="group bg-white rounded-xl p-5 border border-dark-100 hover:border-primary-200 hover:shadow-md transition-all"
               >
                 <div className="flex items-start gap-3 mb-3">

@@ -52,7 +52,7 @@ export default function Footer() {
               {SERVICES.map((s) => (
                 <li key={s.slug}>
                   <Link
-                    to={`/${s.slug}-${MAIN_LOCATION}`}
+                    to={`/${s.slug}`}
                     className="text-sm text-dark-400 hover:text-primary-400 transition-colors flex items-center gap-1"
                   >
                     <ChevronRight className="w-3 h-3 text-primary-600" />
@@ -92,9 +92,6 @@ export default function Footer() {
                 <div>
                   <a href={`tel:${BUSINESS.phoneRaw}`} className="text-sm text-dark-200 hover:text-primary-400 transition-colors block font-semibold">
                     {BUSINESS.phoneDisplay}
-                  </a>
-                  <a href={`tel:${BUSINESS.secondaryPhone}`} className="text-xs text-dark-500 hover:text-primary-400 transition-colors">
-                    {BUSINESS.secondaryPhone}
                   </a>
                 </div>
               </li>
