@@ -68,13 +68,13 @@ export default function Footer() {
             <h3 className="text-white font-display font-semibold text-sm uppercase tracking-wider mb-4">Service Areas</h3>
             <ul className="space-y-2">
               {SERVICE_LOCATIONS.map((loc) => (
-                <li key={loc.slug} className="space-y-1">
+                <li key={loc.slug}>
                   <Link
                     to={`/electrician-${loc.slug}`}
-                    className="text-sm text-dark-400 hover:text-primary-400 transition-colors flex items-center gap-1"
+                    className="text-sm text-dark-400 hover:text-primary-400 transition-colors flex items-center gap-1.5"
                   >
                     <ChevronRight className="w-3 h-3 text-primary-600" />
-                    Electrician {loc.name}
+                    <span>{loc.name}, CA</span>
                   </Link>
                 </li>
               ))}

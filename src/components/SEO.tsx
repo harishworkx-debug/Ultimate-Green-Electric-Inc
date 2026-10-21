@@ -11,12 +11,15 @@ export default function SEO({ title, description, canonical, schema = [] }: SEOP
   useEffect(() => {
     document.title = title;
     setMeta('name', 'description', description);
-    setLink('canonical', canonical);
+    setMeta('name', 'robots', 'index, follow');
+    const cleanCanonical = canonical.startsWith('/') ? canonical : `/${canonical}`;
+    const fullCanonicalUrl = `https://www.ultimategreenelectric.com${cleanCanonical}`;
+    setLink('canonical', fullCanonicalUrl);
 
     setMeta('property', 'og:title', title);
     setMeta('property', 'og:description', description);
     setMeta('property', 'og:type', 'website');
-    setMeta('property', 'og:url', `https://ultimategreenelectric.com${canonical}`);
+    setMeta('property', 'og:url', fullCanonicalUrl);
     setMeta('property', 'og:site_name', 'Ultimate Green Electric, Inc.');
 
     setMeta('name', 'twitter:card', 'summary_large_image');
@@ -61,5 +64,6 @@ function setLink(rel: string, href: string) {
     el.setAttribute('rel', rel);
     document.head.appendChild(el);
   }
-  el.setAttribute('href', `https://ultimategreenelectric.com${href}`);
+  const fullHref = href.startsWith('http') ? href : `https://www.ultimategreenelectric.com${href.startsWith('/') ? href : `/${href}`}`;
+  el.setAttribute('href', fullHref);
 }

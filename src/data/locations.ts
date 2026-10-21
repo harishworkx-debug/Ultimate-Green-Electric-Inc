@@ -1,5 +1,21 @@
+export interface CityProject {
+  title: string;
+  category: string;
+  description: string;
+  specs: string[];
+  image: string;
+  imageAlt: string;
+}
+
 export interface LocationContent {
   slug: string;
+  name: string;
+  primaryKeyword: string;
+  metaTitle: string;
+  metaDescription: string;
+  zipCodes: string[];
+  permitAuthority: string;
+  buildingCharacteristics: string;
   intro: string;
   servicesIntro: string;
   residential: string;
@@ -9,168 +25,419 @@ export interface LocationContent {
   ev: string;
   whyChoose: string;
   areasNear: string;
+  localProject: CityProject;
   faqs: { question: string; answer: string }[];
 }
 
 export const LOCATION_CONTENTS: Record<string, LocationContent> = {
   'mission-viejo': {
     slug: 'mission-viejo',
-    intro: "As a cornerstone of South Orange County, Mission Viejo is known for its beautiful master-planned neighborhoods and thriving local businesses. However, many homes built here in the 1970s and 80s are starting to show signs of aging electrical systems. Ultimate Green Electric provides top-tier electrical troubleshooting, upgrades, and installations across Mission Viejo.",
-    servicesIntro: "From the homes near Lake Mission Viejo to the commercial hubs along Marguerite Parkway, our licensed electricians handle everything from minor repairs to complete rewiring projects.",
-    residential: "Whether you're remodeling your kitchen, adding smart home lighting, or experiencing frequent tripped breakers, our residential electricians ensure your Mission Viejo home's electrical system is safe and up to current code standards.",
-    commercial: "We support Mission Viejo businesses with reliable commercial electrical services. We handle tenant improvements, dedicated circuitry for heavy equipment, lighting retrofits, and routine maintenance to keep your operations running without downtime.",
-    emergency: "Electrical issues don't always happen during regular business hours. If you smell burning plastic, hear buzzing from your panel, or experience a sudden partial power loss, our emergency electricians in Mission Viejo respond quickly to resolve the hazard.",
-    panel: "Many original Mission Viejo homes still run on 100-amp panels that can't support modern appliances. We specialize in electrical panel upgrades, replacing outdated Zinsco or Federal Pacific panels with safe, modern 200-amp systems.",
-    ev: "More Mission Viejo residents are switching to electric vehicles. We install Level 2 EV chargers securely in your garage or driveway, assessing your load capacity and pulling the necessary city permits.",
-    whyChoose: "We are locally based right here in Mission Viejo, meaning we understand the local building codes, neighborhood associations, and home construction styles better than out-of-town contractors. We prioritize safety, clear communication, and transparent pricing.",
-    areasNear: "Beyond Mission Viejo, our electricians frequently service nearby communities including Lake Forest, Laguna Hills, and Rancho Santa Margarita.",
+    name: 'Mission Viejo',
+    primaryKeyword: 'Electrician in Mission Viejo, CA',
+    metaTitle: 'Electrician in Mission Viejo, CA | Ultimate Green Electric',
+    metaDescription: 'Top-rated licensed electrician in Mission Viejo, CA (Lic #999000). Residential rewiring, 200A panel upgrades, EV chargers & emergency repairs. Call (949) 312-6033.',
+    zipCodes: ['92691', '92692'],
+    permitAuthority: 'City of Mission Viejo Building Services Division',
+    buildingCharacteristics: 'Established 1970s-1980s single-family homes, original 100-amp panels, aluminum branch wiring in select tracts, and modern master-planned neighborhoods around Lake Mission Viejo.',
+    intro: "As our primary headquarters city in South Orange County, Mission Viejo is known for its tree-lined master-planned neighborhoods and thriving commercial centers along Marguerite Parkway and Puerta Real. However, many homes built here in the 1970s and 1980s still operate on original 100-amp electrical panels and outdated Zinsco or Federal Pacific breakers that cannot safely support modern electrical loads. Ultimate Green Electric, Inc. provides fast, code-compliant residential and commercial electrical services directly from our Mission Viejo office.",
+    servicesIntro: "From homes bordering Lake Mission Viejo and Casta del Sol to corporate offices near Crown Valley Parkway, our licensed electricians handle everything from diagnosing flickering circuits to permitted 200A panel upgrades and Tesla EV charger installations.",
+    residential: "We help Mission Viejo homeowners modernize their electrical systems with whole-home rewiring, dedicated kitchen small-appliance circuits, architectural recessed LED lighting, and arc-fault/GFCI breaker protection. Our technicians treat your property with meticulous care, always wearing protective shoe covers and vacuuming work areas thoroughly.",
+    commercial: "We support Mission Viejo medical offices, retail storefronts, and restaurants with dependable commercial electrical contracting. Our services include tenant build-outs, Title 24 compliant commercial lighting retrofits, dedicated 3-phase machinery circuits, and preventative electrical maintenance scheduled to avoid business downtime.",
+    emergency: "Electrical emergencies require immediate professional attention. If you detect a burning plastic odor, hear buzzing from your breaker box, or experience sudden loss of power on one phase, our Mission Viejo emergency electricians respond quickly with fully equipped service vehicles.",
+    panel: "Many original Mission Viejo properties still run on outdated 100A panels that struggle when central air conditioners or electric vehicle chargers turn on. We specialize in 200-amp and 400-amp main service panel upgrades, coordinating municipal permits directly with City of Mission Viejo Building Services.",
+    ev: "With electric vehicle adoption climbing across Mission Viejo, a dedicated Level 2 home charging station is essential. We install Tesla Wall Connectors, ChargePoint, and universal EV chargers with heavy-duty conduit runs and precise load calculations.",
+    whyChoose: "Our central office is located right here at 27525 Puerta Real in Mission Viejo. We know local neighborhood architectural guidelines, HOA requirements, and municipal building codes inside and out, delivering honest assessments and transparent upfront pricing.",
+    areasNear: "From our Mission Viejo dispatch hub, we also provide rapid service to neighboring communities including Lake Forest, Laguna Hills, Aliso Viejo, and Rancho Santa Margarita.",
+    localProject: {
+      title: '200A Main Service Panel Upgrade',
+      category: 'Panel Upgrade',
+      description: 'Replaced an original 100-amp Zinsco panel on a 1978 Mission Viejo single-family home with a modern Square D 200A panel and whole-home surge protector. Fully permitted and approved by the City of Mission Viejo.',
+      specs: ['200A Main Breaker', 'Whole-Home Surge Protector', 'City of Mission Viejo Permitted', '1-Day Completion'],
+      image: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: '200-amp main service panel replacement in Mission Viejo'
+    },
     faqs: [
-      { question: "Do you pull permits for electrical work in Mission Viejo?", answer: "Yes, we handle all necessary permitting through the City of Mission Viejo Building Services for major projects like panel upgrades and EV charger installations." },
-      { question: "Are my home's original aluminum wires safe?", answer: "Many older Mission Viejo homes have aluminum wiring which can pose a fire risk if not properly maintained. We offer aluminum wiring inspections and safe pigtailing solutions." }
+      {
+        question: "Do you pull permits with the City of Mission Viejo?",
+        answer: "Yes. All major electrical work — including service panel upgrades, subpanels, and EV charger installations — requires a permit from the City of Mission Viejo Building Services Division. We handle all paperwork, permit fees, and inspector walk-throughs for you."
+      },
+      {
+        question: "Is aluminum wiring common in older Mission Viejo homes?",
+        answer: "Yes, many tract homes constructed in Mission Viejo between 1968 and the mid-1970s were wired with aluminum conductors. Over time, loose connections can cause dangerous overheating. We provide comprehensive safety inspections and safe COPALUM or AlumiConn pigtailing to secure your circuits."
+      },
+      {
+        question: "How fast can you dispatch an electrician in Mission Viejo?",
+        answer: "Because our central dispatch office is located at 27525 Puerta Real in Mission Viejo, we can often arrive for emergency calls in under 30 minutes, and same-day service is available for standard repairs."
+      }
     ]
   },
   'irvine': {
     slug: 'irvine',
-    intro: "Irvine is a rapidly growing hub for technology, education, and modern residential living in Orange County. With advanced infrastructure and high-tech homes, Irvine residents expect premium, forward-thinking electrical solutions. Ultimate Green Electric delivers state-of-the-art residential and commercial electrical services throughout Irvine.",
-    servicesIntro: "From the bustling Irvine Spectrum area to the quiet residential villages like Woodbridge and Turtle Rock, our certified electricians provide precise, high-quality electrical work tailored to your property.",
-    residential: "We help Irvine homeowners modernize their spaces with energy-efficient LED lighting, smart home automation wiring, landscape lighting, and reliable outlet repairs. We respect your home, always using shoe covers and drop cloths.",
-    commercial: "Irvine's thriving business parks require dependable power. We offer comprehensive commercial electrical services, including network cabling, office lighting upgrades, backup generator installations, and three-phase power solutions.",
-    emergency: "Power disruptions can halt your day. Our Irvine emergency electricians are ready to troubleshoot and repair sudden outages, sparking outlets, and faulty breakers, minimizing your downtime.",
-    panel: "Upgrading your electrical panel is essential when adding high-capacity appliances like heat pumps or electric vehicle chargers. We handle heavy-ups and sub-panel installations to ensure your Irvine property can safely meet its power demands.",
-    ev: "Irvine has one of the highest adoption rates of electric vehicles in Southern California. We install dedicated circuits and Tesla Wall Connectors, Rivian chargers, and universal EVSE equipment safely and up to code.",
-    whyChoose: "Irvine homeowners choose Ultimate Green Electric because of our technical expertise and commitment to clean, professional service. We are fully licensed and insured, ensuring that your property is in the best hands.",
-    areasNear: "Our service area extends from Irvine to neighboring cities like Tustin, Newport Beach, and Lake Forest, providing comprehensive coverage across the region.",
+    name: 'Irvine',
+    primaryKeyword: 'Electrician in Irvine, CA',
+    metaTitle: 'Electrician in Irvine, CA | Ultimate Green Electric',
+    metaDescription: 'Trusted licensed electrician in Irvine, CA (Lic #999000). Commercial tenant buildouts, residential rewiring, Level 2 EV chargers & panel upgrades. Call (949) 312-6033.',
+    zipCodes: ['92602', '92603', '92604', '92606', '92612', '92614', '92618', '92620'],
+    permitAuthority: 'City of Irvine Community Development Department',
+    buildingCharacteristics: 'High concentration of technology parks, modern planned villages (Woodbridge, Turtle Rock, Westpark, Portola Springs), strict Title 24 energy compliance, and widespread EV adoption.',
+    intro: "Irvine is a premier master-planned city in Southern California, renowned for cutting-edge technology companies, the Irvine Spectrum Center, and meticulously designed residential villages. Properties in Irvine demand high-performance, energy-efficient electrical solutions that strictly adhere to California Title 24 standards. Ultimate Green Electric, Inc. provides licensed residential and commercial electrical contracting services to Irvine homeowners and businesses.",
+    servicesIntro: "From established homes in Woodbridge and Turtle Rock to modern developments in Great Park and commercial corporate suites in the Irvine Business Complex (IBC), our certified electricians deliver precision installations and prompt diagnostic repairs.",
+    residential: "We assist Irvine homeowners with smart home automation wiring (Lutron Caséta), ultra-thin architectural recessed lighting, dedicated circuits for high-draw appliances, and home office electrical distribution. We respect your living spaces with meticulous drop-cloth protection and shoe covers.",
+    commercial: "Irvine's extensive commercial complexes require dependable electrical contractors. We provide commercial tenant improvements, Title 24 commercial lighting retrofits with automated daylight harvesting, backup generator interlocks, and dedicated 3-phase circuits for industrial manufacturing and server rooms.",
+    emergency: "When an electrical fault disrupts your home or office, our mobile Irvine service team is dispatched promptly to troubleshoot tripping circuit breakers, diagnose main panel hot spots, and restore power safely.",
+    panel: "Many Irvine properties adding solar batteries, heat pump water heaters, or dual EV chargers require panel capacity upgrades. We evaluate whole-home electrical load calculations and perform seamless 200A or 400A service upgrades permitted through the City of Irvine.",
+    ev: "Irvine leads Orange County in electric vehicle adoption. We install Level 2 Tesla Wall Connectors, ChargePoint Home Flex, and Rivian chargers with clean, concealed conduit runs and dedicated 50A/60A breakers.",
+    whyChoose: "We combine 20+ years of technical electrical expertise with honest communication and upfront pricing. As a licensed California C-10 contractor, we ensure every Irvine installation is code-compliant and safely permitted.",
+    areasNear: "Beyond Irvine, our electricians regularly service neighboring communities including Tustin, Newport Beach, Lake Forest, and Costa Mesa.",
+    localProject: {
+      title: 'Commercial Office LED Title 24 Retrofit',
+      category: 'Commercial',
+      description: 'Upgraded an 8,500 sq ft technology suite in the Irvine Business Complex with Title 24 compliant LED flat-panel troffers, multi-zone automated daylight sensors, and digital dimming controls.',
+      specs: ['California Title 24 Compliant', 'Daylight Harvesting Sensors', '65% Lighting Energy Reduction', 'After-Hours Scheduling'],
+      image: 'https://images.pexels.com/photos/3615735/pexels-photo-3615735.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Commercial LED lighting installation in Irvine office'
+    },
     faqs: [
-      { question: "Can you install smart home lighting systems in Irvine?", answer: "Absolutely. We specialize in installing smart switches, dimmers, and integrated lighting systems from brands like Lutron and Caseta." },
-      { question: "Do you service commercial properties in the Irvine Business Complex?", answer: "Yes, we provide full-service commercial electrical troubleshooting, lighting, and tenant improvements for businesses throughout Irvine." }
+      {
+        question: "How do you handle Irvine Company and HOA approval for EV charger installation?",
+        answer: "Many Irvine villages and condo associations have specific conduit routing and aesthetic guidelines. We provide detailed installation specifications and load calculation reports to help you obtain fast HOA or Irvine Company approval before installation."
+      },
+      {
+        question: "Are your commercial lighting retrofits Title 24 compliant in Irvine?",
+        answer: "Yes, all commercial lighting work performed by Ultimate Green Electric strictly adheres to the 2026 California Title 24 Building Energy Efficiency Standards, including required occupancy sensors and daylight harvesting controls."
+      },
+      {
+        question: "Do you service commercial properties in the Irvine Spectrum and IBC?",
+        answer: "Yes. We offer commercial electrical services across Irvine with flexible after-hours and weekend scheduling to ensure zero disruption to your employees and clients."
+      }
     ]
   },
   'dana-point': {
     slug: 'dana-point',
-    intro: "Dana Point's stunning coastal properties face unique electrical challenges due to the marine environment. Salt air and moisture can accelerate corrosion on electrical components. Ultimate Green Electric provides specialized, weather-resistant electrical solutions for homeowners and businesses in Dana Point.",
-    servicesIntro: "From custom luxury homes along the coast to businesses near the harbor, we deliver high-quality electrical installations, repairs, and upgrades designed to withstand the coastal elements.",
-    residential: "Our residential services in Dana Point include custom indoor lighting design, ceiling fan installations to catch the ocean breeze, and thorough safety inspections to detect saltwater corrosion in exterior panels.",
-    commercial: "We service Dana Point's local shops, restaurants, and marinas with reliable commercial electrical work. From outdoor patio lighting to kitchen equipment wiring, we keep your business illuminated and operational.",
-    emergency: "Coastal storms can sometimes lead to unexpected electrical issues. Our emergency electricians in Dana Point are available to address sudden power loss, weather-damaged exterior fixtures, and unsafe wiring.",
-    panel: "Upgrading an aging or corroded electrical panel is critical for fire safety. We replace outdated panels in Dana Point homes with marine-grade, weather-resistant enclosures that meet current safety codes.",
-    ev: "Prepare your Dana Point home for the future with a Level 2 electric vehicle charger. We provide seamless installations, routing conduit discreetly and ensuring your panel has the required capacity.",
-    whyChoose: "We understand the specific environmental factors that affect Dana Point homes. Our commitment to using high-quality, corrosion-resistant materials ensures that your electrical system remains safe and durable for years to come.",
-    areasNear: "We proudly serve Dana Point and the surrounding coastal communities, including San Juan Capistrano, San Clemente, and Laguna Niguel.",
+    name: 'Dana Point',
+    primaryKeyword: 'Electrician in Dana Point, CA',
+    metaTitle: 'Electrician in Dana Point, CA | Ultimate Green Electric',
+    metaDescription: 'Coastal licensed electrician in Dana Point, CA (Lic #999000). Salt-air corrosion repairs, panel upgrades, marine-grade lighting & EV chargers. Call (949) 312-6033.',
+    zipCodes: ['92624', '92629'],
+    permitAuthority: 'City of Dana Point Community Development Department',
+    buildingCharacteristics: 'Oceanfront bluff estates, harbor-adjacent commercial dining and retail, exposure to marine salt-spray that accelerates exterior panel and fixture corrosion.',
+    intro: "Dana Point is famous for its picturesque harbor, dramatic coastal bluffs, and ocean-view properties. However, living along the Pacific coast exposes electrical systems to high humidity and corrosive salt air. Exterior electrical panels, meter mains, and outdoor lighting fixtures in Dana Point deteriorate much faster than inland systems. Ultimate Green Electric, Inc. provides weather-resistant, coastal-grade electrical installations and repairs throughout Dana Point.",
+    servicesIntro: "From Monarch Beach and the Lantern District to Capistrano Beach, our licensed electricians install marine-rated enclosures, weather-sealed GFCI outlets, and corrosion-resistant landscape lighting systems designed to endure coastal elements.",
+    residential: "We provide comprehensive residential electrical repairs, custom indoor lighting design, ceiling fan installations to circulate coastal ocean breezes, and thermal inspections to detect salt-air corrosion in exterior main panels.",
+    commercial: "We service Dana Point's waterfront restaurants, boutique shops, and marina businesses. From commercial kitchen dedicated circuits and patio heaters to safety disconnects, we keep coastal businesses operating safely.",
+    emergency: "Severe coastal wind and rainstorms can trigger sudden shorts and moisture intrusion in outdoor electrical boxes. Our Dana Point emergency electricians respond quickly to isolate hazards and restore power.",
+    panel: "Replacing an aging or salt-corroded electrical panel in Dana Point is crucial for preventing electrical fires. We install NEMA 3R weather-tight panels with copper bussing and corrosion-inhibiting compounds that pass City of Dana Point building inspections.",
+    ev: "Drive electric along Pacific Coast Highway? We install Level 2 EV charging stations with weather-rated enclosures and stainless-steel hardware engineered to withstand coastal marine fog.",
+    whyChoose: "We understand the specific environmental conditions affecting Dana Point properties. Our focus on marine-grade materials and code compliance guarantees long-term durability and safety for your home.",
+    areasNear: "Our service corridor connects Dana Point with neighboring San Juan Capistrano, Laguna Niguel, and San Clemente.",
+    localProject: {
+      title: 'Corrosion-Resistant Exterior Panel Replacement',
+      category: 'Panel Upgrade',
+      description: 'Replaced a salt-damaged, corroded 100A meter main in a Dana Point coastal home with a weather-sealed NEMA 3R 200-amp copper-bus panel and marine-rated weatherhead.',
+      specs: ['NEMA 3R Weather-Tight Enclosure', 'Copper Bussing', 'City of Dana Point Permitted', 'Corrosion-Inhibiting Sealants'],
+      image: 'https://images.pexels.com/photos/17924298/pexels-photo-17924298.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Exterior electrical panel installation in Dana Point'
+    },
     faqs: [
-      { question: "Does salt air damage electrical panels in Dana Point?", answer: "Yes, salt air can corrode breaker contacts and buss bars, leading to resistance and overheating. We recommend regular inspections for exterior panels in coastal areas." },
-      { question: "Can you install landscape lighting that withstands the marine layer?", answer: "We use high-quality, sealed brass or copper fixtures for outdoor lighting in Dana Point, which resist corrosion much better than standard aluminum." }
+      {
+        question: "How does coastal salt air affect electrical panels in Dana Point?",
+        answer: "Airborne marine salts deposit onto breaker terminals and aluminum buss bars, causing oxidation, increased electrical resistance, and dangerous overheating. We recommend an annual visual and thermal inspection of all exterior panels in coastal Dana Point."
+      },
+      {
+        question: "What outdoor lighting materials last longest in Dana Point?",
+        answer: "Standard powder-coated aluminum fixtures often pit and corrode within 2-3 years near the ocean. We strongly recommend solid brass, copper, or marine-grade composite fixtures with sealed silicone gaskets for coastal Dana Point properties."
+      },
+      {
+        question: "Do you install outdoor EV chargers that can withstand coastal rain and fog?",
+        answer: "Yes, we use NEMA 4 or 4X rated weatherproof enclosures with watertight conduit fittings to ensure your EV charger operates reliably in damp coastal conditions."
+      }
     ]
   },
   'laguna-hills': {
     slug: 'laguna-hills',
-    intro: "Laguna Hills offers a mix of beautiful residential neighborhoods and busy commercial centers. As homes in the area age, updating electrical systems becomes crucial for safety and efficiency. Ultimate Green Electric is the trusted local expert for comprehensive electrical services in Laguna Hills.",
-    servicesIntro: "Whether you live in Nellie Gail Ranch or run a business near the Laguna Hills Mall, our licensed electricians are equipped to handle your specific electrical needs with professionalism and care.",
-    residential: "We provide Laguna Hills homeowners with complete electrical troubleshooting, dedicated appliance circuits, recessed lighting installations, and whole-house surge protection to safeguard your valuable electronics.",
-    commercial: "Our commercial electricians help Laguna Hills businesses thrive by providing energy-efficient lighting upgrades, dedicated power for new equipment, and fast, reliable troubleshooting to prevent operational delays.",
-    emergency: "If you experience a partial power outage or a burning smell near your electrical panel, our Laguna Hills emergency electricians will arrive promptly to diagnose and resolve the issue safely.",
-    panel: "Many older homes in Laguna Hills still have their original electrical panels. We provide professional panel upgrades to 200 amps, ensuring your home can safely handle modern electrical loads without tripping breakers.",
-    ev: "We make EV charging convenient by installing Level 2 charging stations at your Laguna Hills home. We handle the load calculation, permitting, and safe installation of the dedicated circuit.",
-    whyChoose: "Laguna Hills residents trust us for our honest assessments, fair pricing, and meticulous workmanship. We never recommend unnecessary upgrades, focusing only on what your property genuinely needs for safety and performance.",
-    areasNear: "From Laguna Hills, we frequently dispatch our electricians to nearby Aliso Viejo, Laguna Woods, and Lake Forest.",
+    name: 'Laguna Hills',
+    primaryKeyword: 'Electrician in Laguna Hills, CA',
+    metaTitle: 'Electrician in Laguna Hills, CA | Ultimate Green Electric',
+    metaDescription: 'Top licensed electrician in Laguna Hills, CA (Lic #999000). 200A panel upgrades, surge protection, EV chargers & troubleshooting. Call (949) 312-6033.',
+    zipCodes: ['92653', '92654'],
+    permitAuthority: 'City of Laguna Hills Building Division',
+    buildingCharacteristics: 'Custom equestrian estates in Nellie Gail Ranch, established suburban tract homes from the 1970s and 1980s, and commercial medical centers near Saddleback Medical Center.',
+    intro: "Laguna Hills is a scenic South Orange County community blending custom equestrian estates in Nellie Gail Ranch with established residential neighborhoods and medical centers. As homes in Laguna Hills mature, their electrical systems often require modernization to keep up with high-wattage smart appliances, multi-zone HVAC units, and electric vehicle charging. Ultimate Green Electric, Inc. delivers dependable, licensed electrical contracting across Laguna Hills.",
+    servicesIntro: "Whether your home is situated in the rolling hills of Nellie Gail or in a quiet neighborhood near Alicia Parkway, our licensed technicians deliver upfront estimates and top-tier workmanship.",
+    residential: "We provide Laguna Hills homeowners with dedicated 240V appliance circuits, whole-home surge protection to guard expensive smart home electronics against voltage spikes, and LED recessed lighting conversions.",
+    commercial: "We support Laguna Hills medical suites, offices, and retail centers with code-compliant commercial repairs, subpanel additions, and energy-saving lighting retrofits.",
+    emergency: "If your breaker panel begins humming loudly, outlets stop working in vital rooms, or you smell scorched insulation, our emergency repair vehicles are dispatched promptly to secure your home.",
+    panel: "Many homes in Laguna Hills still utilize original 100A or 125A electrical panels that trip frequently when high-load appliances activate. We specialize in permitted 200-amp and 400-amp panel upgrades that pass City of Laguna Hills building inspections.",
+    ev: "We install Level 2 EV charging stations with dedicated 40A to 60A branch circuits, load monitoring, and permit acquisition handled from start to finish.",
+    whyChoose: "Laguna Hills homeowners choose Ultimate Green Electric for our upfront pricing, 20+ years of verified contractor experience, and clean work etiquette.",
+    areasNear: "Our technicians also routinely service neighboring Aliso Viejo, Mission Viejo, and Laguna Woods.",
+    localProject: {
+      title: 'Whole-Home Surge Protection & 200A Service Upgrade',
+      category: 'Panel Upgrade',
+      description: 'Upgraded an outdated 100A panel in a Laguna Hills home to a 200A service with Type 1 whole-home surge protection and dedicated subpanel for a newly installed pool heater.',
+      specs: ['200A Main Service', 'Type 1 Whole-Home Surge Protection', 'Dedicated Pool Subpanel', 'City of Laguna Hills Approved'],
+      image: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Panel upgrade and surge protection in Laguna Hills'
+    },
     faqs: [
-      { question: "How do I know if my Laguna Hills home needs a panel upgrade?", answer: "If your breakers trip frequently, your lights dim when appliances turn on, or if you have an older Zinsco panel, it's time for an upgrade. We offer free panel assessments." },
-      { question: "Do you install whole-house surge protectors?", answer: "Yes, we highly recommend whole-house surge protectors to defend your sensitive electronics and smart appliances from unexpected voltage spikes." }
+      {
+        question: "Why should I install a whole-house surge protector in Laguna Hills?",
+        answer: "Modern homes have thousands of dollars in sensitive microprocessors across smart TVs, refrigerators, computers, and EV chargers. Whole-home surge protectors absorb external utility surges and internal motor switching spikes before they damage your appliances."
+      },
+      {
+        question: "Do you install dedicated circuits for high-end appliances in Nellie Gail Ranch?",
+        answer: "Yes, we install dedicated 120V and 240V circuits for commercial-grade kitchen ranges, sub-zero refrigerators, wine cellars, pool equipment, and workshop tools."
+      },
+      {
+        question: "How long does a 200-amp panel upgrade take in Laguna Hills?",
+        answer: "Most residential panel upgrades are completed within a single day. Power is typically shut off in the morning and restored by late afternoon once our work passes initial inspection."
+      }
     ]
   },
   'laguna-niguel': {
     slug: 'laguna-niguel',
-    intro: "Laguna Niguel is known for its expansive parks, upscale neighborhoods, and beautiful terrain. Homeowners here take pride in their properties, requiring an electrician who delivers clean, high-quality work. Ultimate Green Electric provides premium electrical services tailored to Laguna Niguel residents.",
-    servicesIntro: "From the coastal ridges to the busy commercial centers along Crown Valley Parkway, we deliver precise and code-compliant electrical installations and repairs throughout Laguna Niguel.",
-    residential: "We enhance Laguna Niguel homes with custom interior lighting, landscape lighting design to highlight your property's features, and meticulous troubleshooting to resolve any hidden electrical faults.",
-    commercial: "We partner with Laguna Niguel businesses to provide reliable commercial electrical maintenance, signage lighting repairs, and dedicated circuits for retail and office equipment.",
-    emergency: "Electrical emergencies require immediate attention. Our electricians are ready to respond to urgent issues in Laguna Niguel, such as sparking outlets, loss of power to essential appliances, or main breaker failures.",
-    panel: "A safe, modern electrical panel is the heart of your home's power system. We perform full panel replacements and sub-panel additions in Laguna Niguel, ensuring your electrical infrastructure is robust and secure.",
-    ev: "Charging your electric vehicle at home is a must in Laguna Niguel. We install high-speed EV chargers from all major brands, providing a clean, professional installation in your garage or carport.",
-    whyChoose: "We are committed to delivering a 5-star experience. Laguna Niguel homeowners choose us because we arrive on time, respect your property, and provide transparent, upfront pricing before any work begins.",
-    areasNear: "Our service area seamlessly connects Laguna Niguel with neighboring Dana Point, Aliso Viejo, and San Juan Capistrano.",
+    name: 'Laguna Niguel',
+    primaryKeyword: 'Electrician in Laguna Niguel, CA',
+    metaTitle: 'Electrician in Laguna Niguel, CA | Ultimate Green Electric',
+    metaDescription: 'Premier licensed electrician in Laguna Niguel, CA (Lic #999000). Residential rewiring, 200A panel upgrades, EV chargers & lighting. Call (949) 312-6033.',
+    zipCodes: ['92677'],
+    permitAuthority: 'City of Laguna Niguel Building & Safety Division',
+    buildingCharacteristics: 'Prominent master-planned neighborhoods, coastal ridge view properties, custom kitchen and bathroom remodels, and high demand for Level 2 EV home charging.',
+    intro: "Laguna Niguel is renowned for its vast regional parks, scenic ridge-top vistas, and upscale residential communities. Homeowners here take immense pride in their properties, expecting precision craftsmanship and clean work etiquette from their electrical contractor. Ultimate Green Electric, Inc. delivers licensed residential and commercial electrical services tailored to Laguna Niguel's high standards.",
+    servicesIntro: "From Marina Hills and Bear Brand Ranch to neighborhoods along Crown Valley and Golden Lantern, our licensed electricians handle everything from complex electrical remodels to Level 2 EV charging stations.",
+    residential: "We assist Laguna Niguel homeowners with kitchen remodel electrical wiring, AFCI/GFCI code updates, custom low-voltage landscape lighting, and smart dimming systems that enhance interior aesthetics.",
+    commercial: "We partner with local Laguna Niguel retail establishments, offices, and restaurants to provide dependable commercial maintenance, signage power repairs, and dedicated circuits for commercial equipment.",
+    emergency: "When an electrical emergency arises — such as a sparking wall receptacle, partial power failure, or circuit breaker that will not reset — our emergency electricians respond fast to restore safety.",
+    panel: "Ensure your home's electrical infrastructure can support modern additions. We install modern 200-amp and 400-amp electrical panels in Laguna Niguel, complete with whole-house surge protection and city permits.",
+    ev: "We install Level 2 Tesla Wall Connectors and universal EV charging equipment in Laguna Niguel garages, carefully concealing conduit along baseboards and structural beams.",
+    whyChoose: "We provide a 5-star customer experience with clean drop cloths, shoe covers, upfront written estimates, and a 100% code-compliance guarantee.",
+    areasNear: "Our technicians frequently travel between Laguna Niguel, Dana Point, Aliso Viejo, and San Juan Capistrano.",
+    localProject: {
+      title: 'Tesla Wall Connector 60A Installation',
+      category: 'EV Charger',
+      description: 'Installed a dedicated 60A 240V circuit with EMT conduit and a Tesla Wall Connector in a Laguna Niguel garage, delivering maximum 48-amp continuous home charging.',
+      specs: ['60A Dedicated Circuit', 'Concealed EMT Conduit Run', 'Wi-Fi Commissioned', 'City of Laguna Niguel Permitted'],
+      image: 'https://images.pexels.com/photos/5391509/pexels-photo-5391509.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Tesla EV charger installed in Laguna Niguel garage'
+    },
     faqs: [
-      { question: "Can you help design and install landscape lighting in Laguna Niguel?", answer: "Yes, we specialize in low-voltage LED landscape lighting to enhance the security and aesthetic appeal of your Laguna Niguel property." },
-      { question: "What should I do if a breaker keeps tripping?", answer: "A repeatedly tripping breaker is a sign of an overloaded circuit or a short. Do not keep resetting it. Call us to diagnose the root cause safely." }
+      {
+        question: "Can my existing electrical panel in Laguna Niguel handle an EV charger?",
+        answer: "We perform a thorough load calculation during our estimate. If your panel has sufficient remaining amperage, we can install the dedicated circuit immediately. If your panel is at capacity, we can upgrade it to 200 amps simultaneously."
+      },
+      {
+        question: "Do you install landscape lighting for hillside properties in Laguna Niguel?",
+        answer: "Yes, we design and install low-voltage LED landscape lighting systems that accentuate hillside terrain, pathways, and outdoor entertaining spaces with energy-efficient fixtures."
+      },
+      {
+        question: "What permits are required for electrical work in Laguna Niguel?",
+        answer: "The City of Laguna Niguel requires permits for panel replacements, new subpanels, dedicated 240V EV circuits, and major rewiring. We pull all permits directly through the City of Laguna Niguel Building & Safety Division."
+      }
     ]
   },
   'lake-forest': {
     slug: 'lake-forest',
-    intro: "Nestled against the foothills, Lake Forest is a vibrant community with a mix of established neighborhoods and newer developments. Ultimate Green Electric provides dependable, high-quality electrical services to keep Lake Forest homes and businesses running safely and efficiently.",
-    servicesIntro: "Whether you need a simple outlet repair in the Woods or a major commercial installation in the business parks, our licensed Lake Forest electricians have the expertise to get the job done right.",
-    residential: "Our residential services in Lake Forest cover everything from ceiling fan installations and recessed lighting to complete home rewiring and troubleshooting stubborn electrical issues.",
-    commercial: "We offer comprehensive commercial electrical services for Lake Forest businesses, including warehouse lighting retrofits, office tenant improvements, and dedicated machinery wiring.",
-    emergency: "Don't let an electrical hazard compromise your safety. Our emergency electricians in Lake Forest are available to handle sudden outages, buzzing breakers, and damaged wiring.",
-    panel: "Many original Lake Forest homes are outgrowing their electrical capacity. We provide expert electrical panel upgrades to safely accommodate new HVAC systems, hot tubs, and modern appliances.",
-    ev: "Get ready for the electric vehicle revolution. We install safe, reliable Level 2 EV chargers at your Lake Forest home, ensuring your vehicle is charged and ready every morning.",
-    whyChoose: "Lake Forest residents appreciate our honest communication and strong work ethic. We are a locally based company that takes pride in building long-term relationships with our clients through exceptional service.",
-    areasNear: "Our electricians in Lake Forest also proudly serve the neighboring communities of Foothill Ranch, Portola Hills, and Mission Viejo.",
+    name: 'Lake Forest',
+    primaryKeyword: 'Electrician in Lake Forest, CA',
+    metaTitle: 'Electrician in Lake Forest, CA | Ultimate Green Electric',
+    metaDescription: 'Licensed electrician in Lake Forest, CA (Lic #999000). Panel upgrades, EV chargers, commercial electrical & fast repairs. Call (949) 312-6033 for a free quote.',
+    zipCodes: ['92630'],
+    permitAuthority: 'City of Lake Forest Building Division',
+    buildingCharacteristics: 'Mix of established 1970s suburban neighborhoods around the Lake Forest Beach and Tennis Club, new developments in Baker Ranch, and commercial/industrial business centers in Foothill Ranch.',
+    intro: "Framed by the Saddleback Mountains, Lake Forest is a vibrant community with a diverse mix of classic neighborhoods and expanding commercial business centers. Many older homes in the Woods and near the Beach and Tennis Club feature original 100-amp panels that need modernizing, while businesses in Foothill Ranch need reliable commercial electrical contracting. Ultimate Green Electric, Inc. delivers complete electrical solutions throughout Lake Forest.",
+    servicesIntro: "From residential repairs in established Lake Forest neighborhoods to tenant buildouts and warehouse lighting in Foothill Ranch, our licensed electricians get the job done right the first time.",
+    residential: "Our Lake Forest residential services encompass troubleshooting intermittent circuit faults, ceiling fan installations, recessed lighting conversions, and rewiring during room additions.",
+    commercial: "We offer comprehensive commercial electrical services across Lake Forest business parks, including high-bay warehouse LED retrofits, machine disconnects, 3-phase power, and emergency exit lighting maintenance.",
+    emergency: "Electrical hazards do not wait for business hours. Our emergency technicians are on standby 24/7 to address burning odors, arcing breakers, or sudden power loss in Lake Forest.",
+    panel: "Upgrading to a 200-amp panel is the best way to prepare your Lake Forest home for central air conditioning, an EV charger, or a modern induction range. We handle the permit and inspection process with City of Lake Forest building officials.",
+    ev: "We install Level 2 EV charging stations from Tesla, ChargePoint, and JuiceBox for Lake Forest homeowners, ensuring safe load distribution and clean conduit routing.",
+    whyChoose: "We are a locally based contractor with 20+ years of field experience in South Orange County. We offer transparent upfront pricing and guaranteed code compliance.",
+    areasNear: "We also provide fast electrical dispatch to Foothill Ranch, Portola Hills, Irvine, and Mission Viejo.",
+    localProject: {
+      title: 'Emergency Feeder Cable & Subpanel Repair',
+      category: 'Repairs',
+      description: 'Responded same-day to an arcing subpanel feeder lug in a Lake Forest home, replaced damaged copper cables, torqued connections to manufacturer specifications, and restored power safely.',
+      specs: ['Same-Day Emergency Dispatch', 'Thermal Camera Diagnosis', 'Torque-to-Spec Connections', 'Safe Power Restoration'],
+      image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Emergency subpanel repair in Lake Forest'
+    },
     faqs: [
-      { question: "Do you install dedicated circuits for hot tubs in Lake Forest?", answer: "Yes, we install the necessary 240V dedicated circuits and GFCI protection required for safe hot tub and spa operation." },
-      { question: "How long does a panel upgrade take?", answer: "Most residential panel upgrades in Lake Forest can be completed in a single day, minimizing the disruption to your home's power supply." }
+      {
+        question: "Do you install dedicated 240V circuits for spas and hot tubs in Lake Forest?",
+        answer: "Yes. Hot tubs require a dedicated 50A or 60A 240V circuit with an outdoor GFCI emergency disconnect located within sight of the spa, fully adhering to Lake Forest municipal building codes."
+      },
+      {
+        question: "Can you retrofit commercial warehouse lighting in Foothill Ranch?",
+        answer: "Yes, we replace outdated metal-halide and fluorescent high-bay fixtures with high-efficiency commercial LED fixtures that reduce electricity consumption by up to 70%."
+      },
+      {
+        question: "Are estimates free for Lake Forest residential projects?",
+        answer: "Yes, we provide free upfront estimates on all standard residential and commercial electrical installations in Lake Forest."
+      }
     ]
   },
   'aliso-viejo': {
     slug: 'aliso-viejo',
-    intro: "As one of Orange County's newer cities, Aliso Viejo boasts modern homes and a bustling town center. However, even newer electrical systems require maintenance, upgrades, and expert troubleshooting. Ultimate Green Electric is Aliso Viejo's premier choice for modern electrical solutions.",
-    servicesIntro: "From residential upgrades in the hills to commercial maintenance at the Aliso Viejo Town Center, we deliver superior electrical services with a focus on safety and technology.",
-    residential: "We help Aliso Viejo homeowners integrate smart home technology, upgrade to energy-efficient LED lighting, and ensure their electrical systems are perfectly balanced and safe.",
-    commercial: "Aliso Viejo's corporate parks demand uninterrupted power. We provide commercial electrical services including data cabling, office lighting optimization, and preventive maintenance.",
-    emergency: "When an unexpected electrical issue arises, our Aliso Viejo emergency electricians respond swiftly to diagnose the problem and restore your power safely.",
-    panel: "If you're adding heavy electrical loads to your Aliso Viejo home, a panel upgrade or sub-panel installation may be necessary. We assess your current capacity and provide safe, code-compliant upgrades.",
-    ev: "We are experts in EV charger installation in Aliso Viejo. Whether you drive a Tesla, Rivian, or any other EV, we provide a clean, dedicated circuit installation for fast home charging.",
-    whyChoose: "We bring a modern approach to electrical work. Aliso Viejo residents choose us for our up-to-date knowledge of the latest electrical technologies and our unwavering commitment to customer satisfaction.",
-    areasNear: "We provide seamless electrical services to Aliso Viejo and nearby Laguna Niguel, Laguna Beach, and Laguna Hills.",
+    name: 'Aliso Viejo',
+    primaryKeyword: 'Electrician in Aliso Viejo, CA',
+    metaTitle: 'Electrician in Aliso Viejo, CA | Ultimate Green Electric',
+    metaDescription: 'Top-rated licensed electrician in Aliso Viejo, CA (Lic #999000). Smart home wiring, EV charger installations, panel upgrades & repairs. Call (949) 312-6033.',
+    zipCodes: ['92656'],
+    permitAuthority: 'City of Aliso Viejo Building Services',
+    buildingCharacteristics: 'Master-planned communities built predominantly in the 1990s and 2000s, active Homeowners Associations (HOAs), high-tech corporate campus parks near Pacific Park Dr.',
+    intro: "Aliso Viejo is a master-planned community nestled in the San Joaquin Hills, characterized by modern residential developments, active community associations, and corporate tech parks. While homes in Aliso Viejo are newer than those in surrounding cities, electrical needs continue to evolve with the rapid adoption of electric vehicles, smart home automation, and home office power requirements. Ultimate Green Electric, Inc. delivers premium electrical contracting services across Aliso Viejo.",
+    servicesIntro: "From hillside homes near Grand Avenue to commercial office suites near the Aliso Viejo Town Center, our licensed electricians provide cutting-edge installations and precision troubleshooting.",
+    residential: "We help Aliso Viejo homeowners install Lutron smart dimmers, architectural LED recessed lighting, home theater dedicated circuits, and whole-home surge suppressors.",
+    commercial: "We service corporate tech facilities and retail businesses in Aliso Viejo with commercial lighting optimization, dedicated server circuits, Title 24 compliance, and routine electrical safety checks.",
+    emergency: "When an unexpected electrical fault threatens your safety or business operations in Aliso Viejo, our licensed technicians are on call 24 hours a day to isolate and repair the issue.",
+    panel: "If your Aliso Viejo property is adding heavy electrical loads like a high-output EV charger, pool pump, or induction cooktop, we perform load calculations and subpanel/main panel upgrades.",
+    ev: "We are EV charging installation specialists in Aliso Viejo. We install Level 2 chargers in single-family garages and assist condo owners with HOA-approved charging solutions.",
+    whyChoose: "We provide modern, clean, and courteous electrical services. Aliso Viejo homeowners appreciate our punctuality, transparent pricing, and thorough cleanup.",
+    areasNear: "Our technicians also service nearby Laguna Niguel, Laguna Hills, and Laguna Beach.",
+    localProject: {
+      title: 'Architectural Wafer LED Recessed Lighting',
+      category: 'Residential',
+      description: 'Installed 16 ultra-thin wafer LED recessed lights with Lutron Caséta smart dimmers and personalized scenes in an Aliso Viejo two-story living room and kitchen.',
+      specs: ['Lutron Caséta Smart Dimmers', 'Ultra-Thin Wafer LEDs', 'Zero Ceiling Damage', 'App & Voice Control'],
+      image: 'https://images.pexels.com/photos/1253128/pexels-photo-1253128.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Recessed lighting installation in Aliso Viejo'
+    },
     faqs: [
-      { question: "Can you troubleshoot flickering lights in my Aliso Viejo home?", answer: "Yes, flickering lights can indicate a loose neutral connection, a failing dimmer, or an overloaded circuit. We can quickly diagnose and fix the issue." },
-      { question: "Do you install electrical wiring for home theaters?", answer: "Yes, we can conceal wiring, install dedicated circuits for AV equipment, and set up the perfect lighting for your Aliso Viejo home theater." }
+      {
+        question: "Can you install an EV charger in an Aliso Viejo condominium or townhome?",
+        answer: "Yes, under California Civil Code Section 4745 (the EV Charging Open Access Act), HOAs cannot unreasonably prohibit EV charger installations. We provide the load calculations, conduit diagrams, and insurance documentation required by Aliso Viejo HOAs."
+      },
+      {
+        question: "Why do my lights flicker in my Aliso Viejo home?",
+        answer: "Flickering lights typically point to loose neutral wiring, incompatible LED dimmer switches, or large appliances causing transient voltage drops on shared branch circuits. We diagnose and eliminate flickering promptly."
+      },
+      {
+        question: "Do you install smart lighting and automation switches?",
+        answer: "Yes, we install and configure smart switches, dimmers, and hubs from leading brands including Lutron Caséta, Leviton, and TP-Link Kasa."
+      }
     ]
   },
   'san-juan-capistrano': {
     slug: 'san-juan-capistrano',
-    intro: "San Juan Capistrano is rich in history and features a unique blend of historic properties, equestrian estates, and modern developments. Working on historic or older properties requires a specialized touch. Ultimate Green Electric provides expert, careful electrical services throughout San Juan Capistrano.",
-    servicesIntro: "Whether you need to rewire a historic home near the Mission or install modern lighting in a new estate, our skilled electricians respect your property and deliver pristine work.",
-    residential: "Our residential services in San Juan Capistrano include safe rewiring of older homes, custom lighting design, and upgrading outdated outlets and switches to modern safety standards.",
-    commercial: "We service the unique commercial spaces of San Juan Capistrano, providing electrical solutions for retail shops, restaurants, and equestrian facilities that blend safety with aesthetic appeal.",
-    emergency: "Older electrical systems can sometimes fail unexpectedly. Our emergency electricians are experienced in safely addressing urgent electrical hazards in San Juan Capistrano's diverse range of properties.",
-    panel: "Upgrading the electrical panel is often the first step in modernizing an older San Juan Capistrano home. We safely replace outdated systems with robust 200-amp panels that meet all modern codes.",
-    ev: "Bring modern convenience to your historic or contemporary San Juan Capistrano home. We install Level 2 EV chargers, carefully routing conduit to preserve the aesthetics of your property.",
-    whyChoose: "We have the experience necessary to handle the unique electrical challenges of San Juan Capistrano's older homes. We take the time to do the job right, prioritizing safety without compromising your home's character.",
-    areasNear: "From San Juan Capistrano, our service footprint extends to Dana Point, San Clemente, and Mission Viejo.",
+    name: 'San Juan Capistrano',
+    primaryKeyword: 'Electrician in San Juan Capistrano, CA',
+    metaTitle: 'Electrician in San Juan Capistrano, CA | Ultimate Green Electric',
+    metaDescription: 'Licensed electrician in San Juan Capistrano, CA (Lic #999000). Historic home rewiring, 200A panel upgrades, EV chargers & repairs. Call (949) 312-6033.',
+    zipCodes: ['92675'],
+    permitAuthority: 'City of San Juan Capistrano Development Services Department',
+    buildingCharacteristics: 'Historic adobe and Spanish revival homes, large equestrian ranches in the rolling hills, and modern luxury estate developments requiring specialized non-destructive rewiring techniques.',
+    intro: "San Juan Capistrano is one of California's most historic communities, famous for its historic Mission, Spanish colonial architecture, and picturesque equestrian estates. Working on historic and custom properties in San Juan Capistrano requires specialized electrical expertise to ensure modern safety without disturbing historic structural elements. Ultimate Green Electric, Inc. provides careful, code-compliant electrical contracting throughout San Juan Capistrano.",
+    servicesIntro: "From historic adobe properties near the Los Rios Historic District to modern luxury ranches in Hunt Club and Marbella, our electricians deliver respectful, high-caliber electrical work.",
+    residential: "We specialize in non-destructive rewiring of older residences, replacing ungrounded cloth-insulated wiring, upgrading outdated circuit breakers, and installing custom Spanish-revival architectural lighting.",
+    commercial: "We service San Juan Capistrano's boutique wineries, restaurants, and equestrian boarding facilities with agricultural power distribution, commercial kitchen wiring, and outdoor arena floodlighting.",
+    emergency: "Aging wiring can fail without warning. If you experience burning smells, arcing outlets, or sudden phase failure in San Juan Capistrano, our emergency technicians respond promptly.",
+    panel: "Upgrading to a modern 200-amp electrical panel is essential for older San Juan Capistrano homes adding modern appliances or solar. We coordinate permit approval with City of San Juan Capistrano Development Services.",
+    ev: "We install Level 2 EV chargers, carefully concealing conduit along exterior eaves and landscaping to preserve the aesthetic charm of your San Juan Capistrano estate.",
+    whyChoose: "We possess the technical knowledge and delicate touch required to work in historic and custom homes. We never rush, guaranteeing safe and immaculate electrical installations.",
+    areasNear: "Our service corridor connects San Juan Capistrano with Dana Point, San Clemente, and Mission Viejo.",
+    localProject: {
+      title: 'Kitchen Remodel Rewiring & Code Compliance',
+      category: 'Residential',
+      description: 'Completed full electrical rewiring for a major kitchen remodel in San Juan Capistrano, adding dedicated dual 20A small-appliance circuits, island GFCIs, and under-cabinet LED illumination.',
+      specs: ['Dual 20A Kitchen Circuits', 'AFCI / GFCI Protection', 'Clean Drywall Preservation', 'City of San Juan Capistrano Permitted'],
+      image: 'https://images.pexels.com/photos/8961701/pexels-photo-8961701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Kitchen remodel electrical rewiring in San Juan Capistrano'
+    },
     faqs: [
-      { question: "Can you rewire an older home in San Juan Capistrano without damaging the walls?", answer: "We use specialized techniques to snake wires through existing walls with minimal disruption, though some minor drywall patching is occasionally necessary." },
-      { question: "Are knob-and-tube wiring systems safe?", answer: "No, original knob-and-tube wiring is ungrounded and poses a fire hazard. We highly recommend completely rewiring these older systems to modern standards." }
+      {
+        question: "Can you rewire an older home in San Juan Capistrano without damaging plaster or adobe walls?",
+        answer: "Yes, our electricians use specialized flexible drill bits, fish tapes, and attic/crawlspace access techniques to route modern Romex wiring through existing walls with minimal or zero drywall damage."
+      },
+      {
+        question: "Are original two-prong ungrounded outlets safe?",
+        answer: "Two-prong outlets lack an equipment ground wire, exposing modern computers and sensitive appliances to shock and surge hazards. We can retrofit these circuits with modern GFCI protection or rewire them to code."
+      },
+      {
+        question: "Do you install electrical systems for equestrian barns and arenas?",
+        answer: "Yes, we install dust-tight and moisture-resistant conduit, outdoor arena floodlights, and GFCI-protected circuits for equestrian barns throughout San Juan Capistrano."
+      }
     ]
   },
   'rancho-santa-margarita': {
     slug: 'rancho-santa-margarita',
-    intro: "Rancho Santa Margarita (RSM) is a beautiful, family-oriented community nestled against the Saddleback Mountains. With a high concentration of residential neighborhoods, reliable home electrical systems are essential. Ultimate Green Electric provides top-rated electrical repairs and upgrades for RSM residents.",
-    servicesIntro: "From the homes around RSM Lake to the commercial centers in the business park, we provide comprehensive, code-compliant electrical services tailored to the needs of the community.",
-    residential: "We help RSM homeowners with everything from installing beautiful outdoor patio lighting and ceiling fans to troubleshooting tricky GFCI outlets that keep tripping.",
-    commercial: "Our commercial electricians in RSM provide lighting retrofits, dedicated power installations, and electrical maintenance for local shops, restaurants, and offices.",
-    emergency: "If you experience a sudden electrical failure or smell something burning from an outlet, our emergency electricians in Rancho Santa Margarita are ready to respond and secure your home.",
-    panel: "Ensure your RSM home can safely handle modern power demands. We provide professional electrical panel upgrades, replacing aging components with safe, high-capacity systems.",
-    ev: "Save time by charging your EV at home. We install dedicated Level 2 EV charging stations for Rancho Santa Margarita homeowners, ensuring a safe and efficient charge.",
-    whyChoose: "We are a family-friendly, locally operated business that treats your RSM home with the utmost respect. We wear shoe covers, clean up our workspaces, and provide honest, upfront pricing.",
-    areasNear: "Our service area includes Rancho Santa Margarita and the neighboring communities of Coto de Caza, Dove Canyon, and Trabuco Canyon.",
+    name: 'Rancho Santa Margarita',
+    primaryKeyword: 'Electrician in Rancho Santa Margarita, CA',
+    metaTitle: 'Electrician in Rancho Santa Margarita, CA | Ultimate Green Electric',
+    metaDescription: 'Trusted licensed electrician in Rancho Santa Margarita, CA (Lic #999000). 200A panel upgrades, EV chargers, patio lighting & repairs. Call (949) 312-6033.',
+    zipCodes: ['92688'],
+    permitAuthority: 'City of Rancho Santa Margarita Building Division',
+    buildingCharacteristics: 'Family-friendly master-planned communities developed in the late 1980s and 1990s against the Santa Ana Mountains, with extensive HOA neighborhoods and outdoor living spaces.',
+    intro: "Rancho Santa Margarita (RSM) is a picturesque, family-centric master-planned community tucked against the foothills of the Santa Ana Mountains. With homes constructed primarily in the late 1980s and 1990s, many properties are reaching the age where main panels, outdoor GFCI circuits, and original lighting require professional updates. Ultimate Green Electric, Inc. delivers dependable, top-tier electrical services across Rancho Santa Margarita.",
+    servicesIntro: "From homes bordering Lago Santa Margarita and Robinson Ranch to businesses in the RSM commercial business park, our licensed electricians provide upfront pricing and reliable service.",
+    residential: "We help RSM families enhance their homes with outdoor patio lighting, ceiling fans to keep cool during warm valley summers, kitchen circuit upgrades, and GFCI repairs.",
+    commercial: "We support RSM business owners with commercial electrical maintenance, retail display lighting, dedicated machine circuits, and prompt troubleshooting.",
+    emergency: "When an electrical emergency strikes in Rancho Santa Margarita, our technicians are dispatched promptly to secure your home against fire and shock hazards.",
+    panel: "Many original RSM homes feature 100A or 125A panels that are now maxed out. We upgrade your electrical service to a modern 200A panel with City of Rancho Santa Margarita permits.",
+    ev: "We install Level 2 EV charging stations with dedicated 240V circuits and proper breaker sizing, allowing RSM commuters to charge overnight safely.",
+    whyChoose: "We are a trusted local contractor in South Orange County with an unblemished licensing record and a commitment to clean, honest workmanship.",
+    areasNear: "Our technicians also provide rapid service to Coto de Caza, Dove Canyon, Trabuco Canyon, and Mission Viejo.",
+    localProject: {
+      title: '200A Panel Replacement & EV Ready Circuit',
+      category: 'Panel Upgrade',
+      description: 'Upgraded a maxed-out 125A panel on a Rancho Santa Margarita home to a 200A main service panel, adding a pre-wired 50A circuit for a future Level 2 EV charger.',
+      specs: ['200A Service Upgrade', '50A EV-Ready Prewire', 'City of RSM Permitted & Inspected', '1-Day Power Restoration'],
+      image: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: 'Electrical panel upgrade in Rancho Santa Margarita'
+    },
     faqs: [
-      { question: "Why do my GFCI outlets in the kitchen keep tripping?", answer: "A tripping GFCI is doing its job by detecting a ground fault, which could be caused by moisture, a faulty appliance, or a worn-out receptacle. We can test and replace it if necessary." },
-      { question: "Can you install outdoor lighting for my RSM patio?", answer: "Yes, we design and install custom outdoor lighting, including string lights, landscape lighting, and security floodlights." }
+      {
+        question: "Why do outdoor GFCI outlets trip frequently in Rancho Santa Margarita?",
+        answer: "Outdoor GFCIs in RSM are exposed to seasonal mountain rains and lawn sprinklers. If the weatherproof in-use cover fails, moisture causes ground faults. We replace damaged units with commercial-grade weather-resistant (WR) GFCIs and heavy-duty bubble covers."
+      },
+      {
+        question: "Do you pull electrical permits with the City of Rancho Santa Margarita?",
+        answer: "Yes, we handle all permit applications and inspections through the City of Rancho Santa Margarita Building Division for panel upgrades and EV charging circuits."
+      },
+      {
+        question: "Can you install outdoor patio and string lighting for RSM backyards?",
+        answer: "Yes, we install custom outdoor low-voltage landscape lighting, security floodlights, and dedicated GFCI-switched circuits for patio string lights and heaters."
+      }
     ]
   },
   'newport-beach': {
     slug: 'newport-beach',
-    intro: "Newport Beach is synonymous with luxury coastal living. From the Balboa Peninsula to Newport Coast, these premium properties require the highest standard of electrical craftsmanship. Ultimate Green Electric delivers flawless, high-end electrical solutions to Newport Beach homeowners and businesses.",
-    servicesIntro: "We provide meticulous electrical installations, smart home integrations, and complex troubleshooting for the luxury homes, retail boutiques, and marinas of Newport Beach.",
-    residential: "Our Newport Beach residential services include architectural lighting design, smart home automation, custom chandelier installations, and complete coastal-grade rewiring.",
-    commercial: "We elevate Newport Beach businesses with premium commercial electrical services. From high-end retail lighting that highlights your merchandise to reliable restaurant kitchen wiring, we ensure your business shines.",
-    emergency: "Electrical issues shouldn't disrupt your coastal lifestyle. Our emergency electricians in Newport Beach provide discreet, rapid response to resolve power outages and electrical hazards.",
-    panel: "Luxury homes demand significant power. We upgrade electrical panels in Newport Beach to 200, 320, or 400 amps to safely support advanced HVAC, pool equipment, and smart home systems.",
-    ev: "We install premium EV charging solutions in Newport Beach garages, providing clean, concealed conduit runs and high-speed charging capabilities for your luxury electric vehicle.",
-    whyChoose: "Newport Beach residents demand perfection, and we deliver. We are known for our meticulous attention to detail, pristine workspace management, and deep understanding of high-end electrical systems.",
-    areasNear: "We serve all of Newport Beach, including Corona del Mar, Newport Coast, and neighboring Costa Mesa and Irvine.",
+    name: 'Newport Beach',
+    primaryKeyword: 'Electrician in Newport Beach, CA',
+    metaTitle: 'Electrician in Newport Beach, CA | Ultimate Green Electric',
+    metaDescription: 'Premier licensed electrician in Newport Beach, CA (Lic #999000). 320A/400A panel upgrades, luxury lighting, boat dock power & EV chargers. Call (949) 312-6033.',
+    zipCodes: ['92660', '92661', '92662', '92663'],
+    permitAuthority: 'City of Newport Beach Community Development Department',
+    buildingCharacteristics: 'High-end coastal estates in Newport Coast, historic island residences on Balboa Island and Peninsula, luxury marinas, and commercial waterfront retail requiring coastal marine-rated materials.',
+    intro: "Newport Beach represents the pinnacle of Southern California luxury coastal living. From the grand estates of Newport Coast and Pelican Hill to charming waterfront cottages on Balboa Island, properties in Newport Beach demand the highest echelon of electrical craftsmanship, discretion, and marine-grade materials. Ultimate Green Electric, Inc. provides high-end residential and commercial electrical contracting tailored to Newport Beach's exacting standards.",
+    servicesIntro: "We provide meticulous electrical installations, architectural lighting design, smart home automation, and heavy electrical service upgrades across Newport Coast, Corona del Mar, and the Balboa Peninsula.",
+    residential: "Our Newport Beach residential services include heavy chandelier ceiling bracing and hanging, Lutron Caséta/RadioRA 3 smart home automation, architectural recessed lighting, and full coastal rewiring.",
+    commercial: "We service high-end retail boutiques in Fashion Island, fine dining restaurants, and commercial marinas with code-compliant electrical maintenance, showcase lighting, and dedicated commercial power.",
+    emergency: "Electrical disruptions should never interrupt your lifestyle. Our Newport Beach emergency electricians provide rapid, discreet service to resolve electrical failures safely.",
+    panel: "Luxury homes with extensive HVAC, wine cellars, pool equipment, and EV fleets require substantial electrical capacity. We install 320-amp and 400-amp main service panels engineered for high-demand coastal estates.",
+    ev: "We install multi-vehicle Level 2 EV charging systems in Newport Beach garages, utilizing intelligent load-sharing to charge multiple vehicles simultaneously without overloading the service.",
+    whyChoose: "Newport Beach clients demand absolute perfection. We are known for our white-glove cleanliness, precision conduit craftsmanship, and deep expertise in coastal electrical codes.",
+    areasNear: "Our service corridor covers all of Newport Beach, Corona del Mar, Newport Coast, Costa Mesa, and Irvine.",
+    localProject: {
+      title: '400A Service Heavy-Up & Dual EV Charging System',
+      category: 'Panel Upgrade',
+      description: 'Upgraded a Newport Coast estate to a 400-amp dual-panel service with intelligent load-sharing Tesla Wall Connectors and whole-property surge suppression.',
+      specs: ['400A Heavy-Up Service', 'Dual Tesla Wall Connectors', 'Whole-Home Surge Suppression', 'City of Newport Beach Permitted'],
+      image: 'https://images.pexels.com/photos/27928762/pexels-photo-27928762.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      imageAlt: '400-amp service upgrade in Newport Coast'
+    },
     faqs: [
-      { question: "Can you install heavy, custom chandeliers in a Newport Beach home?", answer: "Yes. We properly brace ceiling boxes to safely support heavy chandeliers and provide careful, white-glove installation services." },
-      { question: "Do you offer electrical services for boat docks in Newport Beach?", answer: "Yes, we install and repair marine-grade electrical wiring and shore power pedestals for private docks, adhering to strict coastal safety codes." }
+      {
+        question: "Can you install electrical power pedestals for private boat docks in Newport Beach?",
+        answer: "Yes, we install and service marine-grade shore power pedestals, dock lighting, and boat lift circuits in full compliance with National Electrical Code (NEC) Article 555 for marinas and boatyards."
+      },
+      {
+        question: "Can you brace and hang heavy crystal chandeliers in high-ceiling Newport Beach homes?",
+        answer: "Yes, we install heavy-duty structural steel fan/chandelier braces rated for fixtures up to 150+ lbs, and we also install motorized chandelier lifts for effortless ground-level cleaning and bulb replacement."
+      },
+      {
+        question: "How do you protect luxury electrical panels from coastal corrosion in Newport Beach?",
+        answer: "We install NEMA 3R weather-tight stainless steel or powder-coated enclosures, use 100% copper bussing, apply anti-oxidant joint compounds on all terminations, and install internal moisture desiccants."
+      }
     ]
   }
 };
