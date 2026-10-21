@@ -1,4 +1,4 @@
-import { BrowserRouter, useLocation } from 'react-router-dom';
+import { BrowserRouter, useLocation, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -35,7 +35,7 @@ function HashScrollHandler() {
   return null;
 }
 
-function parseRoute(pathname: string): { type: 'home' | 'about' | 'contact' | 'service' | 'location' | '404'; service?: string; location?: string; locationSlug?: string } {
+function parseRoute(pathname: string): { type: 'home' | 'about' | 'contact' | 'service' | 'service-redirect' | 'location' | '404'; service?: string; locationSlug?: string; target?: string } {
   const path = pathname.replace(/^\//, '').replace(/\/$/, '');
 
   if (!path) return { type: 'home' };
@@ -50,14 +50,22 @@ function parseRoute(pathname: string): { type: 'home' | 'about' | 'contact' | 's
     return { type: '404' };
   }
 
+  // Check for service pages with main location: /{service-slug}-{MAIN_LOCATION}
+  const suffix = `-${MAIN_LOCATION}`;
+  if (path.endsWith(suffix)) {
+    const serviceSlug = path.slice(0, -suffix.length);
+    const service = SERVICES.find((s) => s.slug === serviceSlug);
+    if (service) return { type: 'service', service: service.slug };
+  }
 
+  // Handle service slug without location by redirecting to canonical /{service-slug}-{MAIN_LOCATION}
+  const serviceWithoutSuffix = SERVICES.find((s) => s.slug === path);
+  if (serviceWithoutSuffix) {
+    return { type: 'service-redirect', target: `/${serviceWithoutSuffix.slug}-${MAIN_LOCATION}` };
+  }
 
-  // Check for service pages: /{service-slug}
-  const service = SERVICES.find((s) => s.slug === path);
-  if (service) return { type: 'service', service: service.slug };
-  
   // Check for electrical-services
-  if (path === 'electrical-services') return { type: 'home', hash: 'services' };
+  if (path === 'electrical-services') return { type: 'home' };
 
   return { type: '404' };
 }
@@ -69,6 +77,9 @@ function DynamicRouter() {
   if (route.type === 'home') return <HomePage />;
   if (route.type === 'about') return <AboutPage />;
   if (route.type === 'contact') return <ContactPage />;
+  if (route.type === 'service-redirect' && route.target) {
+    return <Navigate to={route.target} replace />;
+  }
   if (route.type === '404') return <NotFoundPage />;
   if (route.type === 'service' && route.service) {
     return <ServicePage key={route.service} service={route.service} />;

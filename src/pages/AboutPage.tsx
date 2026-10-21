@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { Shield, Clock, Award, CheckCircle2, Zap, Phone, Mail, MapPin, Users, Wrench, Building2, Home, ArrowRight, Star } from 'lucide-react';
 import SEO from '@/components/SEO';
 import Breadcrumbs from '@/components/Breadcrumbs';
-import { BUSINESS, SERVICES, SERVICE_LOCATIONS, COMPANY_CREDENTIALS, PROJECT_GALLERY } from '@/data/business';
+import { BUSINESS, SERVICES, SERVICE_LOCATIONS, MAIN_LOCATION, COMPANY_CREDENTIALS, PROJECT_GALLERY } from '@/data/business';
 import { localBusinessSchema, organizationSchema, webSiteSchema, breadcrumbSchema } from '@/data/schema';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import ProcessSection from '@/components/ProcessSection';
@@ -376,7 +376,7 @@ export default function AboutPage() {
             {featuredServices.map((service) => (
               <Link
                 key={service.slug}
-                to={`/${service.slug}`}
+                to={`/${service.slug}-${MAIN_LOCATION}`}
                 className="p-5 rounded-xl bg-white border border-dark-200 hover:border-primary-400 hover:shadow-md transition-all group flex flex-col justify-between"
               >
                 <div>

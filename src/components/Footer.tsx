@@ -52,7 +52,7 @@ export default function Footer() {
               {SERVICES.map((s) => (
                 <li key={s.slug}>
                   <Link
-                    to={`/${s.slug}`}
+                    to={`/${s.slug}-${MAIN_LOCATION}`}
                     className="text-sm text-dark-400 hover:text-primary-400 transition-colors flex items-center gap-1"
                   >
                     <ChevronRight className="w-3 h-3 text-primary-600" />

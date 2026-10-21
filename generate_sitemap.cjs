@@ -4,6 +4,10 @@ const path = require('path');
 const businessPath = path.join(__dirname, 'src', 'data', 'business.ts');
 const businessContent = fs.readFileSync(businessPath, 'utf8');
 
+// Extract MAIN_LOCATION
+const mainLocationMatch = businessContent.match(/export const MAIN_LOCATION\s*=\s*'([^']+)';/);
+const mainLocation = mainLocationMatch ? mainLocationMatch[1] : 'mission-viejo';
+
 // Extract SERVICE_LOCATIONS block
 const serviceLocationsMatch = businessContent.match(/export const SERVICE_LOCATIONS\s*=\s*\[([\s\S]*?)\];/);
 const locationsBlock = serviceLocationsMatch ? serviceLocationsMatch[1] : '';
@@ -49,10 +53,10 @@ locationSlugs.forEach(loc => {
   </url>\n`;
 });
 
-// Add 10 Service Pages: /[service]
+// Add 10 Service Pages with Main Location: /[service]-[mainLocation]
 serviceSlugs.forEach(service => {
   xml += `  <url>
-    <loc>${baseUrl}/${service}</loc>
+    <loc>${baseUrl}/${service}-${mainLocation}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -63,4 +67,4 @@ xml += `</urlset>\n`;
 
 const sitemapPath = path.join(__dirname, 'public', 'sitemap.xml');
 fs.writeFileSync(sitemapPath, xml, 'utf8');
-console.log(`Sitemap generated successfully with 23 clean canonical URLs! Lastmod: ${currentDate}`);
+console.log(`Sitemap generated successfully with 23 clean canonical URLs including main location in services! Lastmod: ${currentDate}`);

@@ -221,15 +221,15 @@ export default function LocationPage({ slug }: { slug: string }) {
                 </div>
                 <div className="text-xs text-dark-700 pt-2 border-t border-dark-200">
                   <span className="font-semibold text-dark-900">Common local projects:</span> Due to local housing characteristics and power requirements, homeowners and commercial property managers frequently schedule{' '}
-                  <Link to="/panel-upgrade" className="text-primary-600 font-semibold hover:underline">
+                  <Link to={`/panel-upgrade-${MAIN_LOCATION}`} className="text-primary-600 font-semibold hover:underline">
                     electrical panel upgrades in {locationName}
                   </Link>
                   {', '}
-                  <Link to="/ev-charger-installation" className="text-primary-600 font-semibold hover:underline">
+                  <Link to={`/ev-charger-installation-${MAIN_LOCATION}`} className="text-primary-600 font-semibold hover:underline">
                     Level 2 EV charger installations
                   </Link>
                   {', and '}
-                  <Link to="/electrical-repair" className="text-primary-600 font-semibold hover:underline">
+                  <Link to={`/electrical-repair-${MAIN_LOCATION}`} className="text-primary-600 font-semibold hover:underline">
                     troubleshooting electrical repairs
                   </Link>
                   .
@@ -297,7 +297,7 @@ export default function LocationPage({ slug }: { slug: string }) {
                   </div>
                   <h3 className="font-display font-bold text-dark-900 text-lg mb-2">
                     <Link
-                      to={`/${service.slug}`}
+                      to={`/${service.slug}-${MAIN_LOCATION}`}
                       className="hover:text-primary-600 transition-colors"
                     >
                       {service.title}
@@ -308,7 +308,7 @@ export default function LocationPage({ slug }: { slug: string }) {
                   </p>
                 </div>
                 <Link
-                  to={`/${service.slug}`}
+                  to={`/${service.slug}-${MAIN_LOCATION}`}
                   className="text-xs font-bold text-primary-600 hover:text-primary-700 flex items-center gap-1.5 pt-3 border-t border-dark-100 mt-2"
                 >
                   <span>{service.action}</span>
@@ -321,13 +321,13 @@ export default function LocationPage({ slug }: { slug: string }) {
           {/* Complementary Services Strip */}
           <div className="mt-8 p-5 bg-white rounded-2xl border border-dark-200 text-center text-xs text-dark-600">
             <span className="font-semibold text-dark-800">Additional specialized services available in {locationName}: </span>
-            <Link to="/lighting-installation" className="text-primary-600 hover:underline font-medium">Recessed & Exterior Lighting</Link>
+            <Link to={`/lighting-installation-${MAIN_LOCATION}`} className="text-primary-600 hover:underline font-medium">Recessed & Exterior Lighting</Link>
             {' · '}
-            <Link to="/outlet-switch-repair" className="text-primary-600 hover:underline font-medium">Outlet & Switch Repairs</Link>
+            <Link to={`/outlet-switch-repair-${MAIN_LOCATION}`} className="text-primary-600 hover:underline font-medium">Outlet & Switch Repairs</Link>
             {' · '}
-            <Link to="/ceiling-fan-installation" className="text-primary-600 hover:underline font-medium">Ceiling Fan Installation</Link>
+            <Link to={`/ceiling-fan-installation-${MAIN_LOCATION}`} className="text-primary-600 hover:underline font-medium">Ceiling Fan Installation</Link>
             {' · '}
-            <Link to="/electrical-inspection" className="text-primary-600 hover:underline font-medium">Code Compliance Inspections</Link>
+            <Link to={`/electrical-inspection-${MAIN_LOCATION}`} className="text-primary-600 hover:underline font-medium">Code Compliance Inspections</Link>
           </div>
         </div>
       </section>

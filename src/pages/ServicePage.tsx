@@ -7,7 +7,7 @@ import Testimonials from '@/components/Testimonials';
 import EstimateForm from '@/components/EstimateForm';
 import CTASection from '@/components/CTASection';
 import { Link } from 'react-router-dom';
-import { SERVICES, SERVICE_LOCATIONS, BUSINESS, GENERAL_FAQS, COMPANY_CREDENTIALS } from '@/data/business';
+import { SERVICES, SERVICE_LOCATIONS, BUSINESS, MAIN_LOCATION, GENERAL_FAQS, COMPANY_CREDENTIALS } from '@/data/business';
 import { localBusinessSchema, serviceSchema, faqSchema, breadcrumbSchema, organizationSchema, webSiteSchema } from '@/data/schema';
 
 const RELATED_SERVICES_MAP: Record<string, string[]> = {
@@ -27,61 +27,61 @@ const SERVICE_CROSS_LINKS: Record<string, { prompt: string; linkText: string; ur
   'panel-upgrade': {
     prompt: 'Planning an electric vehicle charging station or solar battery?',
     linkText: 'Level 2 EV charger installation',
-    url: '/ev-charger-installation',
+    url: `/ev-charger-installation-${MAIN_LOCATION}`,
     note: 'requires proper 200A capacity planning under NEC 625 continuous load rules.',
   },
   'ev-charger-installation': {
     prompt: 'Need additional electrical headroom for 48A continuous charging?',
     linkText: 'electrical panel upgrade',
-    url: '/panel-upgrade',
+    url: `/panel-upgrade-${MAIN_LOCATION}`,
     note: 'may be required if your current home has a 100A or 125A main breaker.',
   },
   'electrical-repair': {
     prompt: 'Facing an urgent fire hazard, sparks, or sudden power failure?',
     linkText: '24/7 emergency electrician',
-    url: '/emergency-electrician',
+    url: `/emergency-electrician-${MAIN_LOCATION}`,
     note: 'team responds immediately with fully stocked mobile units.',
   },
   'emergency-electrician': {
     prompt: 'Need permanent follow-up wiring or diagnostic tracing?',
     linkText: 'comprehensive electrical repair',
-    url: '/electrical-repair',
+    url: `/electrical-repair-${MAIN_LOCATION}`,
     note: 'stabilizes circuits and restores long-term code compliance.',
   },
   'lighting-installation': {
     prompt: 'Looking to optimize bedroom or living room air circulation?',
     linkText: 'ceiling fan installation',
-    url: '/ceiling-fan-installation',
+    url: `/ceiling-fan-installation-${MAIN_LOCATION}`,
     note: 'pairs perfectly with recessed LED downlights and modern dimmers.',
   },
   'ceiling-fan-installation': {
     prompt: 'Want coordinated accent and recessed lighting?',
     linkText: 'lighting installation',
-    url: '/lighting-installation',
+    url: `/lighting-installation-${MAIN_LOCATION}`,
     note: 'enhances room brightness with Title 24 high-efficacy fixtures.',
   },
   'outlet-switch-repair': {
     prompt: 'Experiencing warm switch plates or frequent tripping?',
     linkText: 'electrical repair diagnostics',
-    url: '/electrical-repair',
+    url: `/electrical-repair-${MAIN_LOCATION}`,
     note: 'can identify loose neutral connections or overloaded branch lines.',
   },
   'electrical-inspection': {
     prompt: 'Inspection revealed an outdated Zinsco or FPE panel?',
     linkText: 'electrical panel upgrade',
-    url: '/panel-upgrade',
+    url: `/panel-upgrade-${MAIN_LOCATION}`,
     note: 'replaces hazardous bus bars with certified Square D or Siemens gear.',
   },
   'residential-electrician': {
     prompt: 'Preparing your home for modern electric vehicles?',
     linkText: 'Level 2 EV charger installation',
-    url: '/ev-charger-installation',
+    url: `/ev-charger-installation-${MAIN_LOCATION}`,
     note: 'adds dedicated high-output charging in your garage or carport.',
   },
   'commercial-electrician': {
     prompt: 'Upgrading office or commercial warehouse lighting?',
     linkText: 'commercial lighting installation',
-    url: '/lighting-installation',
+    url: `/lighting-installation-${MAIN_LOCATION}`,
     note: 'ensures full compliance with California Title 24 energy mandates.',
   },
 };
@@ -93,7 +93,7 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
     return <Navigate to="/404" replace />;
   }
 
-  const canonical = `/${service.slug}`;
+  const canonical = `/${service.slug}-${MAIN_LOCATION}`;
   const relatedSlugs = RELATED_SERVICES_MAP[service.slug] || [];
   const relatedServices = relatedSlugs
     .map((slug) => SERVICES.find((s) => s.slug === slug))
@@ -111,7 +111,7 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
           organizationSchema(),
           webSiteSchema(),
           localBusinessSchema(),
-          serviceSchema(service.title, service.slug, "South Orange County"),
+          serviceSchema(service.title, `${service.slug}-${MAIN_LOCATION}`, "Mission Viejo & South Orange County"),
           faqSchema(allFaqs),
           breadcrumbSchema([
             { name: 'Home', url: '/' },
@@ -539,7 +539,7 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
             {relatedServices.map((s) => (
               <Link
                 key={s.slug}
-                to={`/${s.slug}`}
+                to={`/${s.slug}-${MAIN_LOCATION}`}
                 className="group bg-dark-50 rounded-2xl p-5 border border-dark-100 hover:border-primary-400 hover:shadow-md transition-all flex flex-col justify-between"
               >
                 <div>

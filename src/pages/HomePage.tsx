@@ -225,7 +225,7 @@ export default function HomePage() {
             {topServices.map((service) => (
               <Link
                 key={service.slug}
-                to={`/${service.slug}`}
+                to={`/${service.slug}-${MAIN_LOCATION}`}
                 className="group p-6 rounded-2xl bg-dark-50 border border-dark-100 hover:border-primary-400 hover:shadow-xl transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
