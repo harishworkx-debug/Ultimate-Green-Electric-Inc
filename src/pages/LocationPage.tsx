@@ -97,7 +97,7 @@ export default function LocationPage({ slug }: { slug: string }) {
           <img
             src="https://images.pexels.com/photos/14319099/pexels-photo-14319099.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600"
             alt={`Licensed electrician working on an electrical panel in ${locationName}, CA`}
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/85 to-dark-950/60" />

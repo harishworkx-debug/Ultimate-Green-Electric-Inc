@@ -127,7 +127,7 @@ export default function ServicePage({ service: serviceSlug }: { service: string 
           <img
             src={service.image}
             alt={service.imageAlt}
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/85 to-dark-950/60" />

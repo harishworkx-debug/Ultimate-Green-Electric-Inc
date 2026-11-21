@@ -60,7 +60,7 @@ export default function HomePage() {
           <img
             src="https://images.pexels.com/photos/17842832/pexels-photo-17842832.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600"
             alt="Licensed electrician installing circuit breakers in Mission Viejo CA"
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark-950/95 via-dark-950/85 to-dark-950/60" />
